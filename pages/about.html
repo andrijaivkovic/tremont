@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trémont Restaurant - About</title>
+    <link rel="icon" href="../images/fav/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/queries.css" />
+    <link rel="stylesheet" href="../lib/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="mobile-nav flex">
+      <div
+        data-visible="slided"
+        class="mobile-nav-text opacity-0 unfadeInUp flex"
+      >
+        <a href="../index.html"><p>Home</p></a
+        ><a href="../pages/menu.html"><p>Menu</p></a
+        ><a class="active" href="#hero"><p>About</p></a
+        ><a href="../pages/contact.html"><p>Contact</p></a>
+      </div>
+      <div class="mobile-nav-background hidden flex-row">
+        <div
+          data-visible="faded"
+          id="rectangle-1"
+          class="rectangle-1 slided-left"
+        ></div>
+        <div
+          data-visible="faded"
+          id="rectangle-2"
+          class="rectangle-2 slided-right"
+        ></div>
+      </div>
+    </div>
+    <header id="nav" class="primary-header flex" style="top: 0px">
+      <div class="gradient-top"></div>
+      <div class="logo" >
+        <a title="Logo - Home Page" href="../index.html">
+          <h1 class="logo-nav flex font-ambroise-regular color-white">
+            TRÉMONT
+          </h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="primary-navigation flex">
+          <button
+            onclick="mobileNav()"
+            id="mobile-nav-toggle"
+            class="mobile-nav-toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="24"
+              viewBox="0 0 36 24"
+            >
+              <rect
+                id="Line_2"
+                data-name="Line 2"
+                width="36"
+                height="2"
+                transform="translate(0 11)"
+              />
+              <rect id="Line_1" data-name="Line 1" width="36" height="2" />
+              <rect
+                id="Line_3"
+                data-name="Line 3"
+                width="36"
+                height="2"
+                transform="translate(0 22)"
+              />
+            </svg>
+          </button>
+          <li>
+            <a
+              title="Home Page"
+              aria-label="Home Page,"
+              class="font-calluna-light color-white link"
+              href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              title="Menu Page"
+              aria-label="Menu Page,"
+              class="font-calluna-light color-white"
+              href="../pages/menu.html"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              title="About Page"
+              aria-label="About Page,"
+              class="active font-calluna-light color-white"
+              href="#hero"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              title="Contact Page"
+              aria-label="Contact Page,"
+              class="font-calluna-light color-white more-padding"
+              href="../pages/contact.html"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              title="Our Facebook Page"
+              aria-label="Our Facebook Page,"
+              class="social color-white"
+              href="#"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              title="Our Instagram Profile"
+              aria-label="Our Instagram Profile,"
+              class="social color-white"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              title="Our Yelp Profile"
+              aria-label="Our Yelp Profile,"
+              class="social color-white"
+              href="#"
+              ><i class="fab fa-yelp"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero" class="hero flex">
+      <div class="gradient-bottom"></div>
+      <div class="hero-about-background-image"></div>
+      <div class="hero-text color-white flex">
+        <div aria-label="Trémont," class="hero-logo font-ambroise-regular">
+          TRÉMONT
+        </div>
+        <div class="hero-message font-calluna-light">
+          Learn More About Us<br />
+          And Our Restaurant
+        </div>
+        <div class="hero-button flex">
+          <a
+            aria-label=", Meet Us, this button takes you the Meet Us section of this page, "
+            class="font-calluna-light color-white flex"
+            href="#meet-us"
+            ><h6>Meet Us</h6>
+            <i class="fal fa-chevron-right arrow"></i>
+          </a>
+        </div>
+      </div>
+      <svg title="Scroll Indicator"
+      aria-label="This element indicates that you should scroll down"
+      class="scroll-indicator"
+      xmlns="http://www.w3.org/2000/svg"
+      width="2"
+      height="154"
+      viewBox="0 0 1 154"
+    >
+      <g
+        id="Scroll_Indicator"
+        data-name="Scroll Indicator"
+        transform="translate(-959.5 -990)"
+      >
+        <line
+          id="Scroll_Line"
+          data-name="Scroll Line"
+          y2="154"
+          transform="translate(960 990)"
+          fill="none"
+          stroke="#fba1a1"
+          stroke-width="2"
+          stroke-dasharray="10 10"
+        />
+      </g>
+    </svg>
+    </section>
+    <div class="body-container flex-column">
+      <section class="our-story flex z-200">
+        <div class="our-story-image">
+          <picture
+            ><source
+              media="(max-width:1279px)"
+              srcset="../images/our-story-1-small.webp"
+            />
+            <img
+              src="../images/our-story-1.webp"
+              title="Our Story Image - 1"
+              alt="Two images - meat balls, hummus, various fruits and meat sticks on top, sushi rolls on bottom, "
+            />
+          </picture>
+        </div>
+        <div
+          data-aos-offset="400"
+          data-aos-once="false"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="500"
+          data-aos="fade-up"
+          class="our-story-text flex-column"
+        >
+          <h2
+            aria-hidden="true"
+            class="flair color-accent font-greatvibrations-regular"
+          >
+            Discover
+          </h2>
+          <h1
+            aria-label="Our Story, "
+            class="title color-white font-calluna-bold"
+          >
+            Our Story
+          </h1>
+          <p class="body-text color-light-grey font-montserrat-light">
+            When we opened <span>Trémont Restaurant</span> in 2005 our vision
+            was to create the <span>best dining experience</span> in Paris. In a
+            city with endless options for bars and restaurants we found it
+            challenging to find the restaurant with
+            <span>relaxing ambiance and the food quality</span> we aim to
+            provide. We wanted to provide the people of Paris with the original
+            form of social networking: fun and quality experience.
+          </p>
+          <p class="body-text color-light-grey font-montserrat-light">
+            Our belief in providing exceptional products with friendly service
+            in a clean and welcoming setting had helped us earn the reputation
+            among the locals as one of the
+            <span>best restaurants in Paris.</span>
+          </p>
+          <div class="our-story-button flex">
+            <a
+              aria-label=", Learn More, this button takes you the Meet Us section of this page, "
+              class="font-montserrat-regular color-white flex"
+              href="#meet-us"
+              ><h6>Learn More</h6>
+              <i class="fal fa-chevron-right arrow"></i>
+            </a>
+          </div>
+          </section>
+          <section id="meet-us" class="meet-us flex-row">
+            <div
+              data-aos-offset="400"
+              data-aos-once="false"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+              data-aos="fade-left"
+              class="meet-us-title-chefs flex-column"
+            >
+              <div class="meet-us-title flex-column">
+                <h2
+                  aria-hidden="true"
+                  class="flair color-accent font-greatvibrations-regular"
+                >
+                  Best
+                </h2>
+                <h1
+                  aria-label="Meet Us, "
+                  class="title color-white font-calluna-bold"
+                >
+                  Meet Us
+                </h1>
+              </div>
+              <div class="meet-us-chefs flex-column">
+                <div class="chefs-row flex-row">
+                  <div class="chef flex-column">
+                    <div class="chef-image">
+                      <img
+                        src="../images/chef-1.webp"
+                        title="Naomee Rhee - Chef and Owner"
+                        alt=", Naomee Rhee Portrait Image, "
+                      />
+                    </div>
+                    <div class="chef-text flex-column">
+                      <h1
+                        aria-label=", Naomee Rhee, "
+                        class="font-calluna-light color-white"
+                      >
+                        Naomee Rhee
+                      </h1>
+                      <h2
+                        aria-label=", Chef and Owner,"
+                        class="font-calluna-italic color-light-grey"
+                      >
+                        Chef - Owner
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="chef flex-column">
+                    <div class="chef-image">
+                      <img
+                        src="../images/chef-2.webp"
+                        title="Rian Booker - Executive Chef"
+                        alt=", Rian Booker Portrait Image, "
+                      />
+                    </div>
+                    <div class="chef-text flex-column">
+                      <h1
+                        aria-label=", Rian Booker, "
+                        class="font-calluna-light color-white"
+                      >
+                        Rian Booker
+                      </h1>
+                      <h2
+                        aria-label=", Execitive Chef,"
+                        class="font-calluna-italic color-light-grey"
+                      >
+                        Executive Chef
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="chefs-row flex-row">
+                  <div class="chef flex-column">
+                    <div class="chef-image">
+                      <img
+                        src="../images/chef-3.webp"
+                        title="Philip Ward - Senior Chef"
+                        alt=", Philip Ward Portrait Image, "
+                      />
+                    </div>
+                    <div class="chef-text flex-column">
+                      <h1
+                        aria-label=", Philip Ward, "
+                        class="font-calluna-light color-white"
+                      >
+                        Philip Ward
+                      </h1>
+                      <h2
+                        aria-label=", Senior Chef,"
+                        class="font-calluna-italic color-light-grey"
+                      >
+                        Senior Chef
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="chef flex-column">
+                    <div class="chef-image">
+                      <img
+                        src="../images/chef-4.webp"
+                        title="Austin Brown - Junior Chef"
+                        alt=", Austin Brown Portrait Image, "
+                      />
+                    </div>
+                    <div class="chef-text flex-column">
+                      <h1
+                        aria-label=", Austin Brown,"
+                        class="font-calluna-light color-white"
+                      >
+                        Austin Brown
+                      </h1>
+                      <h2
+                        aria-label=", Junior Chef,"
+                        class="font-calluna-italic color-light-grey"
+                      >
+                        Junior Chef
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="chefs-row flex-row">
+                  <div class="chef flex-column">
+                    <div class="chef-image">
+                      <img
+                        src="../images/chef-5.webp"
+                        title="Henry Jones - Junior Chef"
+                        alt=", Henry Jones Portrait Image, "
+                      />
+                    </div>
+                    <div class="chef-text flex-column">
+                      <h1
+                        aria-label=", Henry Jones,"
+                        class="font-calluna-light color-white"
+                      >
+                        Henry Jones
+                      </h1>
+                      <h2
+                        aria-label=", Junior Chef,"
+                        class="font-calluna-italic color-light-grey"
+                      >
+                        Junior Chef
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="chef flex-column">
+                    <div class="chef-image">
+                      <img
+                        src="../images/chef-6.webp"
+                        title="Matthew Castillo - Junior Chef"
+                        alt=", Matthew Castillo Portrait Image, "
+                      />
+                    </div>
+                    <div class="chef-text flex-column">
+                      <h1
+                        aria-label=", Matthew Castillo,"
+                        class="font-calluna-light color-white"
+                      >
+                        Matthew Castillo
+                      </h1>
+                      <h2
+                        aria-label=", Junior Chef,"
+                        class="font-calluna-italic color-light-grey"
+                      >
+                        Junior Chef
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meet-us-image flex">
+              <img
+                src="../images/meet-us.webp"
+                title="Meet Us Image"
+                alt="Two images - burgers and fries on top, shrimps and tomato sauce on bottom, "
+              />
+            </div>
+          </section>
+          <section class="our-rewards-container flex-row z-200">
+            <div class="our-rewards-image">
+              <picture
+                ><source
+                  media="(max-width:1279px)"
+                  srcset="../images/our-rewards-small.webp"
+                />
+                <img
+                  src="../images/our-rewards.webp"
+                  title="Our Rewards Image"
+                  alt="Two images - chef arranging a meal on top, hamburger on a wooden plate on bottom, "
+                />
+              </picture>
+            </div>
+            <div
+              data-aos-offset="400"
+              data-aos-once="false"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="500"
+              data-aos="fade-right"
+              class="our-rewards-text flex-column"
+            >
+              <div class="our-rewards-text-title">
+                <h2
+                  aria-hidden="true"
+                  class="flair color-accent font-greatvibrations-regular"
+                >
+                  Recognition
+                </h2>
+                <h1
+                  aria-label="Our Laurels, "
+                  class="title color-white font-calluna-bold"
+                >
+                  Our Laurels
+                </h1>
+              </div>
+              <div class="our-rewards-text-rewards flex-column">
+                <div class="rewards-row flex-row">
+                  <div class="reward flex-row">
+                    <div class="reward-image flex">
+                      <img
+                        src="../images/icons/3rd-place.svg"
+                        alt=", 3rd Place, "
+                        title="3rd Place"
+                      />
+                    </div>
+                    <div class="reward-text flex-column">
+                      <h1 class="font-calluna-bold color-white">
+                        Bib Gourmond
+                      </h1>
+                      <p class="font-montserrat-regular color-light-grey">
+                        Best Restaurant<br />in Paris - 2007
+                      </p>
+                    </div>
+                  </div>
+                  <div class="reward flex-row">
+                    <div class="reward-image flex">
+                      <img
+                        src="../images/icons/3rd-place.svg"
+                        alt=", 3rd Place, "
+                        title="3rd Place"
+                      />
+                    </div>
+                    <div class="reward-text flex-column">
+                      <h1 class="font-calluna-bold color-white">Rising Star</h1>
+                      <p class="font-montserrat-regular color-light-grey">
+                        Best Restaurant<br />in Paris - 2009
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="rewards-row flex-row">
+                  <div class="reward flex-row">
+                    <div class="reward-image flex">
+                      <img
+                        src="../images/icons/2nd-place.svg"
+                        alt=", 2nd Place, "
+                        title="2nd Place"
+                      />
+                    </div>
+                    <div class="reward-text flex-column">
+                      <h1 class="font-calluna-bold color-white">
+                        Bib Gourmond
+                      </h1>
+                      <p class="font-montserrat-regular color-light-grey">
+                        Best Restaurant<br />in Paris - 2012
+                      </p>
+                    </div>
+                  </div>
+                  <div class="reward flex-row">
+                    <div class="reward-image flex">
+                      <img
+                        src="../images/icons/1st-place.svg"
+                        alt=", 1st Place, "
+                        title="1st Place"
+                      />
+                    </div>
+                    <div class="reward-text flex-column">
+                      <h1 class="font-calluna-bold color-white">
+                        Perfect Chef
+                      </h1>
+                      <p class="font-montserrat-regular color-light-grey">
+                        Best Restaurant<br />in Paris - 2015
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div
+            aria-hidden="true"
+            data-aos-offset="300"
+            data-aos-once="false"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="500"
+            data-aos="fade-up"
+            class="subscribe-container flex-column"
+          >
+            <div class="subscribe-stars flex-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="77"
+                height="73.233"
+                viewBox="0 0 77 73.233"
+              >
+                <path
+                  id="iconmonstr-star-3"
+                  d="M38.5.587,50.268,24.868,77,28.56l-19.455,18.7L62.293,73.82,38.5,61.093,14.7,73.82l4.752-26.562L0,28.56l26.732-3.693Z"
+                  transform="translate(0 -0.587)"
+                  fill="#fba1a1"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="77"
+                height="73.233"
+                viewBox="0 0 77 73.233"
+              >
+                <path
+                  id="iconmonstr-star-3"
+                  d="M38.5.587,50.268,24.868,77,28.56l-19.455,18.7L62.293,73.82,38.5,61.093,14.7,73.82l4.752-26.562L0,28.56l26.732-3.693Z"
+                  transform="translate(0 -0.587)"
+                  fill="#fba1a1"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="77"
+                height="73.233"
+                viewBox="0 0 77 73.233"
+              >
+                <path
+                  id="iconmonstr-star-3"
+                  d="M38.5.587,50.268,24.868,77,28.56l-19.455,18.7L62.293,73.82,38.5,61.093,14.7,73.82l4.752-26.562L0,28.56l26.732-3.693Z"
+                  transform="translate(0 -0.587)"
+                  fill="#fba1a1"
+                />
+              </svg>
+            </div>
+            <div class="subscribe flex-row">
+              <img
+                src="../images/subscribe-1.webp"
+                alt=""
+                class="subscribe-image"
+              />
+              <div class="subscribe-text flex-column">
+                <h1 class="font-calluna-bold color-white">
+                  Join Our Mailing List
+                </h1>
+                <p class="font-montserrat-light color-white text-center">
+                  Sign up for our newsletter and learn about special events and
+                  promotions before we announce them anywhere else!
+                </p>
+                <form action="">
+                  <input
+                    autocomplete="off"
+                    placeholder="Your Email Address"
+                    type="email"
+                  />
+                </form>
+                <div class="subscribe-button flex">
+                  <a class="font-montserrat-regular color-white flex" href="#"
+                    ><h6>Subscribe</h6>
+                    <i class="fal fa-chevron-right arrow"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-container flex-column z-200">
+            <h1 class="footer-logo font-ambroise-regular color-white">
+              TRÉMONT
+            </h1>
+            <p class="footer-copyright font-montserrat-light color-light-grey">
+              © Trémont Restaurant. All Rights Reserved.
+            </p>
+            <div class="footer-social flex-row">
+              <a
+                title="Our Facebook Page"
+                aria-label="Our Facebook Page,"
+                class="social color-white"
+                href="#"
+                ><i class="fab fa-facebook-square"></i></a
+              ><a
+                title="Our Instagram Profile"
+                aria-label="Our Instagram Profile,"
+                class="social color-white"
+                href="#"
+                ><i class="fab fa-instagram"></i></a
+              ><a
+                title="Our Yelp Profile"
+                aria-label="Our Yelp Profile,"
+                class="social color-white"
+                href="#"
+                ><i class="fab fa-yelp"></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+        </body>
+      </section>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c7be3f5b26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../lib/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+      });
+    </script>
+</html>
