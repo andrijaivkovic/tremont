@@ -1,4 +1,4 @@
-# tremont
+# Tremont Restaurant
 
 This is a web page of the Parisian Restaurant Tremont, designed and developed by me.
 
