@@ -301,6 +301,12 @@
   .subscribe-text p {
     font-size: 1rem;
   }
+
+  /* == FOOTER == */
+
+  footer {
+    margin: 12rem 0 12rem 0;
+  }
 }
 
 /* == PHONES == */
