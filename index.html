@@ -196,7 +196,7 @@
       </svg>
     </section>
     <div class="body-container flex-column">
-      <section class="our-story flex-row z-200">
+      <section aria-labelledby="our-story-title" class="our-story flex-row z-200">
         <div class="our-story-image">
           <picture
             ><source
@@ -224,7 +224,7 @@
           >
             Discover
           </h2>
-          <h1
+          <h1 id="our-story-title"
             aria-label=", Our Story, "
             class="title color-white font-calluna-bold"
           >
@@ -255,7 +255,7 @@
             </a>
           </div>
           </section>
-          <section class="our-menu flex-row z-200">
+          <section aria-labelledby="our-menu-title" class="our-menu flex-row z-200">
             <div
               data-aos-offset="300"
               data-aos-once="false"
@@ -270,7 +270,7 @@
               >
                 Delicious
               </h2>
-              <h1 class="title color-white font-calluna-bold">Our Menu</h1>
+              <h1 id="our-menu-title" class="title color-white font-calluna-bold">Our Menu</h1>
               <p class="body-text color-light-grey font-montserrat-light">
                 We pride ourself with the variety and the quality of food and
                 drinks we provide. From Western to Japanese cuisine you can eat
@@ -316,10 +316,10 @@
               class="contact-text flex-column"
             >
               <div
-                aria-label="Contact,"
+                aria-labelledby="contact-title"
                 class="contact-text-title color-white font-calluna-bold flex"
               >
-                <h1>Contact</h1>
+                <h1 id="contact-title">Contact</h1>
               </div>
               <div
                 class="contact-text-info flex-column color-white font-montserrat-light"
@@ -351,7 +351,7 @@
                 </div>
                 <div class="info flex-row font-montserrat-bold">
                   <i class="fal fa-comment fa-fw color-accent"></i>
-                  <p>Message Us</p>
+                  <p aria-label=", Message Us, ">Message Us</p>
                 </div>
               </div>
               <div class="contact-text-form flex-column">
