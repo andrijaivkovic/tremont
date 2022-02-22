@@ -827,8 +827,7 @@ a:hover .arrow {
 /* == OUT REWARDS == */
 
 .our-rewards-container {
-  max-width: 240ch;
-  min-width: 140ch;
+  width: 140ch;
   flex-direction: row;
   gap: 6rem;
 }
