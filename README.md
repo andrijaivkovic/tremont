@@ -22,4 +22,4 @@ Make hamburger menu not scroll to the top of the page on click
 
 Make media queries cleaner
 
-CSS clean-u
+CSS clean-up
