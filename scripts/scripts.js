@@ -94,35 +94,6 @@ function japaneseMenu() {
   }
 }
 
-// function middleEasternMenu() {
-//   var vis2 = $(".menus-container-japanese").attr("data-visible");
-//   var vis3 = $(".menus-container-western").attr("data-visible");
-//   var vis4 = $(".menus-container-korean").attr("data-visible");
-
-//   if (vis2 === "shown" || vis3 === "shown" || vis4 === "shown") {
-//     $(".menus-container-japanese").attr("data-visible", "hidden");
-//     $(".menus-container-western").attr("data-visible", "hidden");
-//     $(".menus-container-korean").attr("data-visible", "hidden");
-
-//     $(".menus-container-japanese").removeClass("menu-shown");
-//     $(".menus-container-western").removeClass("menu-shown");
-//     $(".menus-container-korean").removeClass("menu-shown");
-
-//     $(".menu-select-item-japanese").removeClass("active");
-//     $(".menu-select-item-western").removeClass("active");
-//     $(".menu-select-item-korean").removeClass("active");
-
-//     $(".menus-container-japanese").addClass("menu-hidden");
-//     $(".menus-container-western").addClass("menu-hidden");
-//     $(".menus-container-korean").addClass("menu-hidden");
-
-//     $(".menus-container-middle-eastern").attr("data-visible", "shown");
-//     $(".menus-container-middle-eastern").removeClass("menu-hidden");
-//     $(".menus-container-middle-eastern").addClass("menu-shown");
-//     $(".menu-select-item-middle-eastern").addClass("active");
-//   }
-// }
-
 function westernMenu() {
   var vis2 = $(".menus-container-japanese").attr("data-visible");
   var vis3 = $(".menus-container-middle-eastern").attr("data-visible");
