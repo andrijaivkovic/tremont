@@ -2,7 +2,7 @@
 
 #ABOUT
 
-This is a web page of the Parisian Restaurant Tremont, designed and developed by me.
+This is the web page of the Parisian Restaurant Tremont, designed and developed by me.
 
 Code is written entirely by me and I focused on using no frameworks and writing code from scratch with a few exceptions.
 Frameworks that I used were jQuery for cleaner JavaScript code and Animate on Scroll which made animating elements easier.
