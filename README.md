@@ -18,6 +18,10 @@ of text has a rich description for those using assistive technologies.
 #TODO
 
 Add Reservation form
+
 Make hamburger menu not scroll to the top of the page on click
+
 Make media queries cleaner
+
 CSS clean-uo
+
