@@ -199,12 +199,21 @@
       <section aria-labelledby="our-story-title" class="our-story flex-row z-200">
         <div class="our-story-image">
           <picture
-            ><source
-              media="(max-width:1279px)"
-              srcset="images/our-story-small.webp"
+            >
+            <source
+            media="(min-width:1366px) and (max-width:1536px)"
+            srcset="images/1366/our-story-1366.webp"
+            />
+            <source
+            media="(min-width:1024px) and (max-width:1365px)"
+            srcset="images/1024/our-story-medium.webp"
+            />
+            <source
+              media="(min-width:360px) and (max-width:820px)"
+              srcset="images/360/our-story-small.webp"
             />
             <img
-              src="images/our-story.webp"
+              src="images/1920/our-story.webp"
               alt="Two images - Sushi on top, fried chicken burger in a box on bottom"
               title="Our Story Image"
             />
@@ -294,12 +303,21 @@
             </div>
             <div class="our-menu-image">
               <picture
-                ><source
-                  media="(max-width:1279px)"
-                  srcset="images\our-menu-small.webp"
+                >
+                <source
+                media="(min-width:1366px) and (max-width:1536px)"
+                srcset="images/1366/our-menu-1366.webp"
+                />
+                <source
+                media="(min-width:1024px) and (max-width:1365px)"
+                srcset="images/1024/our-menu-medium.webp"
+                />
+                <source
+                  media="(min-width:360px) and (max-width:820px)"
+                  srcset="images/360/our-menu-small.webp"
                 />
                 <img
-                  src="images\our-menu.webp"
+                  src="images/1920/our-menu.webp"
                   alt="Two images - sandwich and fries on left, hamburger and coca-cola on right"
                   title="Our Menu Image"
                 />
@@ -464,7 +482,7 @@
             </div>
             <div class="subscribe flex-row">
               <img
-                src="images\subscribe-1.webp"
+                src="images/1920/subscribe-1.webp"
                 alt="Subscribe Promt Images"
                 class="subscribe-image"
               />

@@ -1,9 +1,716 @@
 /* == MEDIA QUERIES == */
 
+/* == DESKTOP == */
+
+/* == DESKTOP 1366 == */
+
+@media only screen and (min-width: 1366px) and (max-width: 1536px) {
+  /* == GENERAL == */
+
+  .body-container {
+    padding-inline: 10rem;
+    gap: 10rem;
+  }
+
+  ::placeholder {
+    color: var(--primary-color);
+    opacity: 1;
+    font-family: Montserrat-Light;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    font-size: 1em;
+    color: var(--primary-color);
+    font-family: Montserrat-Light;
+    background-color: var(--dark-grey-color);
+    border: none;
+    border-bottom: 1px solid white;
+    resize: none;
+    padding: 0.5rem;
+    padding-left: 0;
+    resize: none;
+  }
+
+  /* == HERO 1366 == */
+
+  .hero-button {
+    font-size: 1.4rem;
+  }
+
+  .hero-button h6 {
+    font-size: 1.5rem;
+  }
+
+  /* == OUR STORY 1366px == */
+
+  .our-story {
+    max-width: 107ch;
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    gap: 6rem;
+  }
+
+  .our-story-text p {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    line-height: 1.75rem;
+  }
+
+  .our-story-text p:first-of-type {
+    margin-top: 1.5rem;
+  }
+
+  .our-story-text p:last-of-type {
+    margin-top: 1.25rem;
+  }
+
+  .our-story-text h1 {
+    font-size: 2.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-story-text h2 {
+    font-size: 2rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-story h6 {
+    font-size: 1.25rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-story-button {
+    padding-top: 3rem;
+    font-size: 1.25rem;
+    letter-spacing: 0rem;
+  }
+
+  /* == OUR MENU 1366px == */
+
+  .our-menu {
+    max-width: 107ch;
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    gap: 6rem;
+  }
+
+  .our-menu-text p {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    line-height: 1.75rem;
+  }
+
+  .our-menu-text p:first-of-type {
+    margin-top: 1.5rem;
+  }
+
+  .our-menu-text p:last-of-type {
+    margin-top: 1.25rem;
+  }
+
+  .our-menu-text h1 {
+    font-size: 2.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-menu-text h2 {
+    font-size: 2rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-menu h6 {
+    font-size: 1.25rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-menu-button {
+    padding-top: 3rem;
+    font-size: 1.25rem;
+    letter-spacing: 0rem;
+  }
+
+  /* == CONTACT 1366px == */
+
+  .contact-text {
+    padding: 5rem 8rem 5rem 5rem;
+  }
+
+  .info {
+    font-size: 1.1rem;
+  }
+
+  .contact-text {
+    gap: 2.5rem;
+  }
+
+  .contact-text-form {
+    gap: 3rem;
+  }
+
+  .contact-text-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-text input,
+  textarea {
+    width: 250px;
+  }
+
+  .contact-map {
+    margin-left: -5rem;
+  }
+
+  .contact-map iframe {
+    width: 500px;
+    height: 700px;
+  }
+
+  .contact-button h6 {
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  .contact-button {
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  /* == MENUS 1366px == */
+
+  .menu {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .menu-text {
+    display: none;
+  }
+
+  .menu-title {
+    margin-bottom: 3rem;
+  }
+
+  .menu-title h1 {
+    font-size: 2.75rem;
+  }
+
+  .menu-title h2 {
+    font-size: 2rem;
+  }
+
+  .menu-select {
+    margin-bottom: 3rem;
+    gap: 2rem;
+  }
+
+  .menu-select button {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: end;
+  }
+
+  .menu-item-title {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+
+  .menu-item-description {
+    font-size: 0.75rem;
+  }
+
+  .menu-item-price {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+
+  .menu-item-pieces {
+    font-size: 0.75rem;
+  }
+
+  /* == MEET US 1366px == */
+
+  .meet-us-image {
+    display: none;
+  }
+
+  .meet-us-title {
+    text-align: start;
+  }
+
+  .meet-us-title h1 {
+    font-size: 2.75rem;
+  }
+
+  .meet-us-title h2 {
+    font-size: 2rem;
+  }
+
+  .meet-us-title-chefs {
+    align-items: flex-start;
+  }
+
+  .chef-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .chef-image img {
+    width: 250px;
+    height: auto;
+  }
+
+  /* == OUR REWARDS 1366px == */
+
+  .our-rewards-container {
+    gap: 6rem;
+    justify-content: center;
+  }
+
+  .our-rewards-text {
+    gap: 5rem;
+  }
+
+  .our-rewards-text-rewards {
+    gap: 4rem;
+  }
+
+  .flair {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .reward {
+    gap: 2rem;
+  }
+
+  .reward-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .reward-text p {
+    font-size: 1rem;
+  }
+
+  /* == SUBSCRIBE 1366px == */
+
+  .subscribe {
+    max-width: 110ch;
+    width: auto;
+  }
+
+  .subscribe-text h1 {
+    font-size: 2.75rem;
+  }
+
+  .subscribe-text p {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* == DESKTOP 1024 == */
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  /* == GENERAL == */
+
+  .body-container {
+    padding-inline: 9rem;
+    gap: 10rem;
+  }
+
+  ::placeholder {
+    color: var(--primary-color);
+    opacity: 1;
+    font-family: Montserrat-Light;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    font-size: 1em;
+    color: var(--primary-color);
+    font-family: Montserrat-Light;
+    background-color: var(--dark-grey-color);
+    border: none;
+    border-bottom: 1px solid white;
+    resize: none;
+    padding: 0.5rem;
+    padding-left: 0;
+    resize: none;
+  }
+
+  /* == NAV 1024 == */
+
+  .logo {
+    margin-left: 9rem;
+  }
+
+  .primary-navigation {
+    margin: 0;
+    margin-right: 9rem;
+  }
+
+  /* == HERO 1024px == */
+
+  .hero-menu-background-image {
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% bottom;
+  }
+
+  .hero-about-background-image {
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% bottom;
+  }
+
+  .hero-text {
+    padding-left: 9rem;
+  }
+
+  .hero-logo {
+    font-size: 2.5rem;
+  }
+
+  .hero-button {
+    font-size: 1.3rem;
+  }
+
+  .hero-button h6 {
+    font-size: 1.5rem;
+  }
+
+  /* == OUR STORY 1024px == */
+
+  .our-story {
+    max-width: 95ch;
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    gap: 3rem;
+  }
+
+  .our-story-text p {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    line-height: 1.75rem;
+  }
+
+  .our-story-text p:first-of-type {
+    margin-top: 1.25rem;
+  }
+
+  .our-story-text p:last-of-type {
+    margin-top: 1.25rem;
+  }
+
+  .our-story-text h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-story-text h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-story h6 {
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-story-button {
+    padding-top: 2.25rem;
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  /* == OUR MENU 1024px == */
+
+  .our-menu {
+    max-width: 95ch;
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    gap: 3rem;
+  }
+
+  .our-menu-text p {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    line-height: 1.75rem;
+  }
+
+  .our-menu-text p:first-of-type {
+    margin-top: 1.25rem;
+  }
+
+  .our-menu-text p:last-of-type {
+    margin-top: 1.25rem;
+  }
+
+  .our-menu-text h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-menu-text h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-menu h6 {
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  .our-menu-button {
+    padding-top: 2.25rem;
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  /* == CONTACT 1024px == */
+
+  .contact-text {
+    padding: 3rem 7rem 3rem 4rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .contact-text {
+    gap: 2.5rem;
+  }
+
+  .contact-text-form {
+    gap: 3rem;
+  }
+
+  .contact-text-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-text input,
+  textarea {
+    width: 250px;
+  }
+
+  .contact-map {
+    margin-left: -5rem;
+  }
+
+  .contact-map iframe {
+    width: 350px;
+    height: 600px;
+  }
+
+  .contact-button h6 {
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  .contact-button {
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+  }
+
+  /* == MENUS 1024px == */
+
+  .menu {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    flex-direction: column;
+  }
+
+  .menu-title {
+    display: none;
+  }
+
+  .menu-text {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .menu-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0rem;
+  }
+
+  .menu-text h2 {
+    font-size: 2.625rem;
+    letter-spacing: 0rem;
+  }
+
+  .menu-select {
+    margin: 0;
+    margin-bottom: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .menu-select button {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: end;
+  }
+
+  .menu-item-title {
+    font-size: 1.75rem;
+    letter-spacing: 0px;
+  }
+
+  .menu-item-description {
+    font-size: 1rem;
+  }
+
+  .menu-item-price {
+    font-size: 1.75rem;
+    letter-spacing: 0px;
+  }
+
+  .menu-item-pieces {
+    font-size: 1rem;
+  }
+
+  .menu-content-japanese {
+    gap: 2rem;
+  }
+
+  .menu-content-japanese-price-pieces {
+    margin: 0;
+  }
+
+  .menu-content-western {
+    gap: 5.2rem;
+  }
+
+  .menu-content-western-price-pieces {
+    margin: 0;
+  }
+
+  /* == MEET US 1024px == */
+
+  .meet-us-image {
+    display: none;
+  }
+
+  .meet-us-title {
+    text-align: start;
+  }
+
+  .meet-us-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .meet-us-title h2 {
+    font-size: 1.75rem;
+  }
+
+  .meet-us-title-chefs {
+    align-items: flex-start;
+  }
+
+  .chef-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .chef-image img {
+    width: 225px;
+    height: auto;
+  }
+
+  /* == REWARDS 1024px == */
+
+  .our-rewards-container {
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .our-rewards-text {
+    gap: 3rem;
+  }
+
+  .our-rewards-text-rewards {
+    gap: 3rem;
+  }
+
+  .flair {
+    font-size: 1.75rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .reward {
+    gap: 1rem;
+  }
+
+  .reward-text h1 {
+    font-size: 1.25rem;
+  }
+
+  .reward-text p {
+    font-size: 0.8rem;
+  }
+
+  /* == SUBSCRIBE 1024px == */
+
+  .subscribe {
+    max-width: 90ch;
+    width: auto;
+  }
+
+  .subscribe-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .subscribe-text p {
+    font-size: 1rem;
+  }
+}
+
 /* == TABLETS == */
 
 @media only screen and (min-width: 481px) and (max-width: 820px) {
-  /* == NAV == */
+  /* == NAV TABLET == */
 
   .mobile-nav {
     display: block;
@@ -49,7 +756,7 @@
     outline: inherit;
   }
 
-  /* == HERO == */
+  /* == HERO TABLET == */
 
   .hero-home-background-image {
     background-position: 60% bottom;
@@ -94,7 +801,7 @@
     letter-spacing: 0.1rem;
   }
 
-  /* == GENERAL == */
+  /* == GENERAL TABLET == */
 
   img {
     width: 100%;
@@ -109,7 +816,7 @@
     gap: 12rem;
   }
 
-  /* == OUR STORY == */
+  /* == OUR STORY TABLET == */
 
   .our-story {
     flex-direction: column;
@@ -118,7 +825,7 @@
     padding-inline: 4vw;
   }
 
-  /* == OUR MENU == */
+  /* == OUR MENU TABLET == */
 
   .our-menu {
     flex-direction: column-reverse;
@@ -127,7 +834,7 @@
     padding-inline: 4vw;
   }
 
-  /* == MEET US == */
+  /* == MEET US TABLET == */
 
   .meet-us-image {
     display: none;
@@ -145,7 +852,7 @@
     font-size: 1.5rem;
   }
 
-  /* == OUR REWARDS == */
+  /* == OUR REWARDS TABLET == */
 
   .our-rewards-container {
     flex-direction: column;
@@ -244,7 +951,7 @@
     margin: 0;
   }
 
-  /* == CONTACT ==  */
+  /* == CONTACT TABLET ==  */
 
   .contact {
     flex-direction: column-reverse;
@@ -278,7 +985,7 @@
     margin: 0;
   }
 
-  /* == SUBSCRIBE == */
+  /* == SUBSCRIBE TABLET == */
 
   .subscribe {
     width: 100%;
@@ -302,7 +1009,7 @@
     font-size: 1rem;
   }
 
-  /* == FOOTER == */
+  /* == FOOTER TABLET == */
 
   footer {
     margin: 12rem 0 12rem 0;
@@ -318,7 +1025,7 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* == GENERAL == */
+  /* == GENERAL PHONE == */
 
   .body-container {
     padding: 0;
@@ -328,7 +1035,7 @@
     gap: 8rem;
   }
 
-  /* == NAV == */
+  /* == NAV PHONE == */
 
   .mobile-nav {
     display: block;
@@ -363,7 +1070,7 @@
     outline: inherit;
   }
 
-  /* == HERO == */
+  /* == HERO PHONE == */
 
   .hero-home-background-image {
     background-position: 60% bottom;
@@ -407,7 +1114,7 @@
     letter-spacing: 0.1rem;
   }
 
-  /* == STORY == */
+  /* == OUR STORY PHONE == */
 
   .our-story {
     width: auto;
@@ -457,7 +1164,7 @@
     letter-spacing: 0rem;
   }
 
-  /* == MENUS == */
+  /* == MENUS PHONE == */
 
   .menu {
     width: 100%;
@@ -544,7 +1251,7 @@
     margin-bottom: 0rem;
   }
 
-  /* == OUR MENU == */
+  /* == OUR MENU PHONE == */
 
   .our-menu {
     width: auto;
@@ -600,7 +1307,7 @@
     letter-spacing: 0rem;
   }
 
-  /* == OUR REWARDS == */
+  /* == OUR REWARDS PHONE == */
 
   .our-rewards-container {
     width: 100%;
@@ -659,7 +1366,7 @@
     gap: 2rem;
   }
 
-  /* == MEET US == */
+  /* == MEET US PHONE == */
 
   .meet-us {
     gap: 9rem;
@@ -724,7 +1431,7 @@
     letter-spacing: 0rem;
   }
 
-  /* == CONTACT ==  */
+  /* == CONTACT PHONE ==  */
 
   .contact {
     flex-direction: column-reverse;
@@ -762,7 +1469,7 @@
     width: 100vw;
   }
 
-  /* == SUBSCRIBE == */
+  /* == SUBSCRIBE PHONE == */
 
   .subscribe {
     width: 100%;
@@ -839,7 +1546,7 @@
     letter-spacing: 0.1rem;
   }
 
-  /* == FOOTER == */
+  /* == FOOTER PHONE == */
 
   footer {
     margin: 8rem 0 8rem 0;

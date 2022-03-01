@@ -643,7 +643,7 @@ textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("../images/hero-home.jpg");
+  background-image: url("../images/hero/hero-home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -657,7 +657,7 @@ textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("../images/hero-menu.jpg");
+  background-image: url("../images/hero/hero-menu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -671,7 +671,7 @@ textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("../images/hero-about.jpg");
+  background-image: url("../images/hero/hero-about.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -874,8 +874,7 @@ a:hover .arrow {
 /* == MENUS == */
 
 .menu {
-  max-width: 240ch;
-  min-width: 142ch;
+  width: 142ch;
 }
 
 .menu-title {
