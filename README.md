@@ -14,7 +14,6 @@ White, or light grey text on dark background is much easier to read and puts les
 Adding ARIA titles to each element was also one of the accessability features, the whole web site is navigable by keyboard and each link, title or body
 of text has a rich description for those using assistive technologies.
 
-
 #TODO
 
 Add Reservation form
@@ -23,5 +22,4 @@ Make hamburger menu not scroll to the top of the page on click
 
 Make media queries cleaner
 
-CSS clean-uo
-
+CSS clean-up
