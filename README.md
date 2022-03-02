@@ -18,7 +18,7 @@ of text has a rich description for those using assistive technologies.
 
 Add Reservation form
 
-SEO
+ S̶E̶O̶
 
 Make hamburger menu not scroll to the top of the page on click
 
