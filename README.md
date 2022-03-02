@@ -16,12 +16,12 @@ of text has a rich description for those using assistive technologies.
 
 #TODO
 
-Add Reservation form
+:x: Add Reservation form
 
-SEO
+:heavy_check_mark: SEO
 
-Make hamburger menu not scroll to the top of the page on click
+:x: Make hamburger menu not scroll to the top of the page on click
 
-Make media queries cleaner
+:x: Make media queries cleaner
 
-CSS clean-up
+:x: CSS clean-up
