@@ -1,8 +1,10 @@
+"use strict";
+
 // == HIDE NAVBAR ==
 
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     $("#nav").css({ top: "0px" });
   } else {
@@ -14,9 +16,9 @@ window.onscroll = function () {
 // == MOBILE NAV ==
 
 function mobileNav() {
-  var visibility1 = $(".rectangle-1").attr("data-visible");
-  var visibility2 = $(".rectangle-2").attr("data-visible");
-  var visibility3 = $(".mobile-nav-text").attr("data-visible");
+  let visibility1 = $(".rectangle-1").attr("data-visible");
+  let visibility2 = $(".rectangle-2").attr("data-visible");
+  let visibility3 = $(".mobile-nav-text").attr("data-visible");
 
   if (
     visibility1 === "slided" &&
@@ -66,9 +68,9 @@ function mobileNav() {
 // == MENUS ==
 
 function japaneseMenu() {
-  var vis2 = $(".menus-container-middle-eastern").attr("data-visible");
-  var vis3 = $(".menus-container-western").attr("data-visible");
-  var vis4 = $(".menus-container-korean").attr("data-visible");
+  let vis2 = $(".menus-container-middle-eastern").attr("data-visible");
+  let vis3 = $(".menus-container-western").attr("data-visible");
+  let vis4 = $(".menus-container-korean").attr("data-visible");
 
   if (vis2 === "shown" || vis3 === "shown" || vis4 === "shown") {
     $(".menus-container-middle-eastern").attr("data-visible", "hidden");
@@ -95,9 +97,9 @@ function japaneseMenu() {
 }
 
 function westernMenu() {
-  var vis2 = $(".menus-container-japanese").attr("data-visible");
-  var vis3 = $(".menus-container-middle-eastern").attr("data-visible");
-  var vis4 = $(".menus-container-korean").attr("data-visible");
+  let vis2 = $(".menus-container-japanese").attr("data-visible");
+  let vis3 = $(".menus-container-middle-eastern").attr("data-visible");
+  let vis4 = $(".menus-container-korean").attr("data-visible");
 
   if (vis2 === "shown" || vis3 === "shown" || vis4 === "shown") {
     $(".menus-container-japanese").attr("data-visible", "hidden");
@@ -124,9 +126,9 @@ function westernMenu() {
 }
 
 function koreanMenu() {
-  var vis2 = $(".menus-container-japanese").attr("data-visible");
-  var vis3 = $(".menus-container-middle-eastern").attr("data-visible");
-  var vis4 = $(".menus-container-western").attr("data-visible");
+  let vis2 = $(".menus-container-japanese").attr("data-visible");
+  let vis3 = $(".menus-container-middle-eastern").attr("data-visible");
+  let vis4 = $(".menus-container-western").attr("data-visible");
 
   if (vis2 === "shown" || vis3 === "shown" || vis4 === "shown") {
     $(".menus-container-japanese").attr("data-visible", "hidden");
