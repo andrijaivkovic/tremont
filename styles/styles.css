@@ -455,7 +455,7 @@ textarea {
   height: 100vh;
 }
 
-.rectangle-1 {
+.rectangle-left {
   background-color: var(--dark-grey-color);
   width: 50%;
   height: 100%;
@@ -463,7 +463,7 @@ textarea {
   transition-timing-function: ease-in-out;
 }
 
-.rectangle-2 {
+.rectangle-right {
   background-color: var(--dark-grey-color);
   width: 50%;
   height: 100%;
@@ -471,11 +471,11 @@ textarea {
   transition-timing-function: ease-in-out;
 }
 
-.mobile-nav [data-visible="unfaded"] {
+.mobile-nav [data-visible="faded"] {
   transition-delay: 0s;
 }
 
-.mobile-nav [data-visible="unslided"] {
+.mobile-nav [data-visible="slided"] {
   transition-delay: 0.3s;
 }
 
@@ -534,16 +534,16 @@ textarea {
   transform: translate(0%);
 }
 
-.slided-right {
-  visibility: hidden;
-  z-index: 0;
-  transform: translate(0, 100%);
-}
-
-.slided-left {
+.slided-up {
   visibility: hidden;
   z-index: 0;
   transform: translate(0, -100%);
+}
+
+.slided-down {
+  visibility: hidden;
+  z-index: 0;
+  transform: translate(0, 100%);
 }
 
 .fadeInUp {

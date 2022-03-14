@@ -15,48 +15,69 @@ window.onscroll = function () {
 
 // == MOBILE NAV ==
 
+const addClass = function (elementName, className) {
+  elementName.addClass(className);
+};
+
+const removeClass = function (elementName, className) {
+  elementName.removeClass(className);
+};
+
+const changeAttribute = function (elementName, attributeName, attributeValue) {
+  elementName.attr(attributeName, attributeValue);
+};
+
+const getAttribute = function (elementName, attributeName) {
+  return elementName.attr(attributeName);
+};
+
+const recLeft = $(".rectangle-left");
+const recRight = $(".rectangle-right");
+const navText = $(".mobile-nav-text");
+const navBkg = $(".mobile-nav-background");
+
 function mobileNav() {
-  let visibility1 = $(".rectangle-1").attr("data-visible");
-  let visibility2 = $(".rectangle-2").attr("data-visible");
-  let visibility3 = $(".mobile-nav-text").attr("data-visible");
+  let vis1 = getAttribute(recLeft, "data-visible");
+  let vis2 = getAttribute(recRight, "data-visible");
+  let vis3 = getAttribute(navText, "data-visible");
 
-  if (
-    visibility1 === "slided" &&
-    visibility2 === "slided" &&
-    visibility3 === "faded"
-  ) {
-    $(".rectangle-1").attr("data-visible", "unslided");
-    $(".rectangle-2").attr("data-visible", "unslided");
-    $(".mobile-nav-text").attr("data-visible", "unfaded");
+  if (vis1 === "slided" && vis2 === "slided" && vis3 === "faded") {
+    changeAttribute(recLeft, "data-visible", "unslided");
+    changeAttribute(recRight, "data-visible", "unslided");
+    changeAttribute(navText, "data-visible", "unfaded");
 
-    $(".rectangle-1").removeClass("unslided");
-    $(".rectangle-2").removeClass("unslided");
-    $(".mobile-nav-text").removeClass("fadeInUp");
-    $(".mobile-nav-background").removeClass("shown");
+    removeClass(recLeft, "slided-up");
+    removeClass(recRight, "slided-down");
+    removeClass(navText, "unfadeInUp");
+    removeClass(navBkg, "hidden");
 
-    $(".rectangle-1").addClass("slided-left");
-    $(".rectangle-2").addClass("slided-right");
-    $(".mobile-nav-text").addClass("unfadeInUp");
-    $(".mobile-nav-background").addClass("hidden");
+    addClass(recLeft, "unslided");
+    addClass(recRight, "unslided");
+    addClass(navText, "fadeInUp");
+    addClass(navBkg, "shown");
+
+    // ENABLE SCROLLING
 
     $("html, body").css({
       overflow: "auto",
       height: "auto",
     });
   } else {
-    $(".rectangle-1").attr("data-visible", "slided");
-    $(".rectangle-2").attr("data-visible", "slided");
-    $(".mobile-nav-text").attr("data-visible", "faded");
+    changeAttribute(recLeft, "data-visible", "slided");
+    changeAttribute(recRight, "data-visible", "slided");
+    changeAttribute(navText, "data-visible", "faded");
 
-    $(".rectangle-1").removeClass("slided-left");
-    $(".rectangle-2").removeClass("slided-right");
-    $(".mobile-nav-text").removeClass("unfadeInUp");
-    $(".mobile-nav-background").removeClass("hidden");
+    removeClass(recLeft, "unslided");
+    removeClass(recRight, "unslided");
+    removeClass(navText, "fadeInUp");
+    removeClass(navBkg, "shown");
 
-    $(".rectangle-1").addClass("unslided");
-    $(".rectangle-2").addClass("unslided");
-    $(".mobile-nav-text").addClass("fadeInUp");
-    $(".mobile-nav-background").addClass("shown");
+    addClass(recLeft, "slided-up");
+    addClass(recRight, "slided-down");
+    addClass(navText, "unfadeInUp");
+    addClass(navBkg, "hidden");
+
+    // STOP USER FROM SCROLLING
 
     $("html, body").css({
       overflow: "hidden",
@@ -67,89 +88,81 @@ function mobileNav() {
 
 // == MENUS ==
 
-function japaneseMenu() {
-  let vis2 = $(".menus-container-middle-eastern").attr("data-visible");
-  let vis3 = $(".menus-container-western").attr("data-visible");
-  let vis4 = $(".menus-container-korean").attr("data-visible");
+const japaneseContainer = $(".menus-container-japanese");
+const japaneseSelect = $(".menu-select-item-japanese");
+const westernContainer = $(".menus-container-western");
+const westernSelect = $(".menu-select-item-western");
+const koreanContainer = $(".menus-container-korean");
+const koreanSelect = $(".menu-select-item-korean");
 
-  if (vis2 === "shown" || vis3 === "shown" || vis4 === "shown") {
-    $(".menus-container-middle-eastern").attr("data-visible", "hidden");
-    $(".menus-container-western").attr("data-visible", "hidden");
-    $(".menus-container-korean").attr("data-visible", "hidden");
+const japaneseMenu = function () {
+  let vis1 = getAttribute(westernContainer, "data-visible");
+  let vis2 = getAttribute(koreanContainer, "data-visible");
 
-    $(".menus-container-middle-eastern").removeClass("menu-shown");
-    $(".menus-container-western").removeClass("menu-shown");
-    $(".menus-container-korean").removeClass("menu-shown");
+  if (vis1 === "shown" || vis2 === "shown") {
+    changeAttribute(westernContainer, "data-visible", "hidden");
+    changeAttribute(koreanContainer, "data-visible", "hidden");
 
-    $(".menu-select-item-middle-eastern").removeClass("active");
-    $(".menu-select-item-western").removeClass("active");
-    $(".menu-select-item-korean").removeClass("active");
+    removeClass(westernContainer, "menu-shown");
+    removeClass(koreanContainer, "menu-shown");
 
-    $(".menus-container-middle-eastern").addClass("menu-hidden");
-    $(".menus-container-western").addClass("menu-hidden");
-    $(".menus-container-korean").addClass("menu-hidden");
+    removeClass(westernSelect, "active");
+    removeClass(koreanSelect, "active");
 
-    $(".menus-container-japanese").attr("data-visible", "shown");
-    $(".menus-container-japanese").removeClass("menu-hidden");
-    $(".menus-container-japanese").addClass("menu-shown");
-    $(".menu-select-item-japanese").addClass("active");
+    addClass(westernContainer, "menu-hidden");
+    addClass(koreanContainer, "menu-hidden");
+
+    changeAttribute(japaneseContainer, "data-visible", "shown");
+    removeClass(japaneseContainer, "menu-hidden");
+    addClass(japaneseContainer, "menu-shown");
+    addClass(japaneseSelect, "active");
   }
-}
+};
 
-function westernMenu() {
-  let vis2 = $(".menus-container-japanese").attr("data-visible");
-  let vis3 = $(".menus-container-middle-eastern").attr("data-visible");
-  let vis4 = $(".menus-container-korean").attr("data-visible");
+const westernMenu = function () {
+  let vis1 = getAttribute(japaneseContainer, "data-visible");
+  let vis2 = getAttribute(koreanContainer, "data-visible");
 
-  if (vis2 === "shown" || vis3 === "shown" || vis4 === "shown") {
-    $(".menus-container-japanese").attr("data-visible", "hidden");
-    $(".menus-container-middle-eastern").attr("data-visible", "hidden");
-    $(".menus-container-korean").attr("data-visible", "hidden");
+  if (vis1 === "shown" || vis2 === "shown") {
+    changeAttribute(japaneseContainer, "data-visible", "hidden");
+    changeAttribute(koreanContainer, "data-visible", "hidden");
 
-    $(".menus-container-japanese").removeClass("menu-shown");
-    $(".menus-container-middle-eastern").removeClass("menu-shown");
-    $(".menus-container-korean").removeClass("menu-shown");
+    removeClass(japaneseContainer, "menu-shown");
+    removeClass(koreanContainer, "menu-shown");
 
-    $(".menu-select-item-japanese").removeClass("active");
-    $(".menu-select-item-middle-eastern").removeClass("active");
-    $(".menu-select-item-korean").removeClass("active");
+    removeClass(japaneseSelect, "active");
+    removeClass(koreanSelect, "active");
 
-    $(".menus-container-japanese").addClass("menu-hidden");
-    $(".menus-container-middle-eastern").addClass("menu-hidden");
-    $(".menus-container-korean").addClass("menu-hidden");
+    addClass(japaneseContainer, "menu-hidden");
+    addClass(koreanContainer, "menu-hidden");
 
-    $(".menus-container-western").attr("data-visible", "shown");
-    $(".menus-container-western").removeClass("menu-hidden");
-    $(".menus-container-western").addClass("menu-shown");
-    $(".menu-select-item-western").addClass("active");
+    changeAttribute(westernContainer, "data-visible", "shown");
+    removeClass(westernContainer, "menu-hidden");
+    addClass(westernContainer, "menu-shown");
+    addClass(westernSelect, "active");
   }
-}
+};
 
-function koreanMenu() {
-  let vis2 = $(".menus-container-japanese").attr("data-visible");
-  let vis3 = $(".menus-container-middle-eastern").attr("data-visible");
-  let vis4 = $(".menus-container-western").attr("data-visible");
+const koreanMenu = function () {
+  let vis1 = getAttribute(japaneseContainer, "data-visible");
+  let vis2 = getAttribute(westernContainer, "data-visible");
 
-  if (vis2 === "shown" || vis3 === "shown" || vis4 === "shown") {
-    $(".menus-container-japanese").attr("data-visible", "hidden");
-    $(".menus-container-middle-eastern").attr("data-visible", "hidden");
-    $(".menus-container-western").attr("data-visible", "hidden");
+  if (vis1 === "shown" || vis2 === "shown") {
+    changeAttribute(japaneseContainer, "data-visible", "hidden");
+    changeAttribute(westernContainer, "data-visible", "hidden");
 
-    $(".menus-container-japanese").removeClass("menu-shown");
-    $(".menus-container-middle-eastern").removeClass("menu-shown");
-    $(".menus-container-western").removeClass("menu-shown");
+    removeClass(japaneseContainer, "menu-shown");
+    removeClass(westernContainer, "menu-shown");
 
-    $(".menu-select-item-japanese").removeClass("active");
-    $(".menu-select-item-middle-eastern").removeClass("active");
-    $(".menu-select-item-western").removeClass("active");
+    removeClass(japaneseSelect, "active");
+    removeClass(westernSelect, "active");
 
-    $(".menus-container-japanese").addClass("menu-hidden");
-    $(".menus-container-middle-eastern").addClass("menu-hidden");
-    $(".menus-container-western").addClass("menu-hidden");
+    addClass(japaneseContainer, "menu-hidden");
+    addClass(westernContainer, "menu-hidden");
 
-    $(".menus-container-korean").attr("data-visible", "shown");
-    $(".menus-container-korean").removeClass("menu-hidden");
-    $(".menus-container-korean").addClass("menu-shown");
-    $(".menu-select-item-korean").addClass("active");
+    changeAttribute(koreanContainer, "data-visible", "shown");
+    removeClass(koreanContainer, "menu-hidden");
+    addClass(koreanContainer, "menu-shown");
+    addClass(koreanSelect, "active");
   }
-}
+};
