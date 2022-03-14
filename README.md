@@ -7,7 +7,7 @@ Frameworks that I used were jQuery for cleaner JavaScript code and Animate on Sc
 
 This project makes use of most modern CSS tools such as Flexbox, clamp() function, Flexbox Gap property and such.
 
-I put great emphasis on accessibility and aesthetics when I designed this website. Making the website dark-mode only was one of them.
+I've put great emphasis on accessibility and aesthetics when I designed this website. Making the website dark-mode only was one of them.
 White, or light grey text on dark background is much easier to read and puts less strain on eyes which helps people with visual disabilities navigate this site.
 Adding ARIA titles to each element was also one of the accessability features, the whole web site is navigable by keyboard and each link, title or body
 of text has a rich description for those using assistive technologies.
