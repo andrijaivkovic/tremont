@@ -1,7 +1,5 @@
 # Tremont Restaurant
 
-## ABOUT
-
 This is the web page of the Parisian restaurant Tremont, designed and developed by me.
 
 Code is written entirely by me and I focused on using no frameworks and writing code from scratch with a few exceptions.
