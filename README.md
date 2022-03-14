@@ -1,6 +1,6 @@
 # Tremont Restaurant
 
-##ABOUT
+## ABOUT
 
 This is the web page of the Parisian restaurant Tremont, designed and developed by me.
 
@@ -14,9 +14,9 @@ White, or light grey text on dark background is much easier to read and puts les
 Adding ARIA titles to each element was also one of the accessability features, the whole web site is navigable by keyboard and each link, title or body
 of text has a rich description for those using assistive technologies.
 
-##TODO
+## TODO
 
-:heavy_check_mark: JavaScript clean-up
+:heavy_check_mark: JS clean-up
 
 :x: Add Reservation form
 
