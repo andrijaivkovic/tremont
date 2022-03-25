@@ -574,15 +574,15 @@
                 class="overlay-form-inputs flex-column"
                 action=""
               >
-                <input placeholder="Full Name" type="text" />
-                <input placeholder="Email Address" type="email" />
-                <input placeholder="Phone Number" type="tel" />
+                <input id="input-name" placeholder="Full Name" type="text" />
+                <input id="input-email" placeholder="Email Address" type="email" />
+                <input id="input-phone" placeholder="Phone Number" type="tel" />
                 <hr />
-                <input id="date-input" placeholder="Reservation Date" type="text" />
-                <input id="time-input" placeholder="Reservation Time" type="text" />
-                <input placeholder="Number Of Guests" type="text" />
+                <input id="input-date" placeholder="Reservation Date" type="text" />
+                <input id="input-time" placeholder="Reservation Time" type="text" />
+                <input id="input-guests" placeholder="Number Of Guests" type="text" />
               </form>
-              <div class="overlay-button flex">
+              <div onclick="validateForm()" class="overlay-button flex">
                 <a class="font-calluna-light color-white flex" href="#"
                   ><h6>Reservation</h6>
                   <i class="fal fa-chevron-right arrow"></i>

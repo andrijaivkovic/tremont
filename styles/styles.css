@@ -421,6 +421,10 @@ section {
   text-align: left;
 }
 
+.red-placeholder::placeholder {
+  color: #ff6961;
+}
+
 :focus:not(:focus-visible) {
   outline: 0;
   box-shadow: none;
