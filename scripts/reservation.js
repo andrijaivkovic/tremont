@@ -20,11 +20,8 @@ $("#time-input").timepicker({
   scrollbar: false,
 });
 
-const resBtn = $(".hero-button");
-const resOverlay = $(".overlay");
-
 function openOverlay() {
-  resOverlay.css("display", "flex");
+  $(".overlay").css("display", "flex");
   //   $("html, body").css({
   //     overflow: "hidden",
   //     height: "100%",
@@ -32,7 +29,7 @@ function openOverlay() {
 }
 
 function closeOverlay() {
-  resOverlay.css("display", "none");
+  $(".overlay").css("display", "none");
   //   $("html, body").css({
   //     overflow: "auto",
   //     height: "auto",
