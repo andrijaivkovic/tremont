@@ -413,6 +413,7 @@ section {
 }
 
 ::placeholder {
+  /* light grey */
   color: var(--light-grey-color);
   opacity: 1;
   font-family: Montserrat-Light;
