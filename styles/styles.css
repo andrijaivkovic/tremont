@@ -1244,11 +1244,12 @@ footer {
 }
 
 .overlay-close {
+  display: none;
   position: absolute;
   top: 35px;
   right: 325px;
-  color: var(--primary-color);
   font-size: 3rem;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -1268,8 +1269,8 @@ footer {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px) brightness(50%);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .overlay-form {
@@ -1277,7 +1278,7 @@ footer {
   max-width: 25rem;
   align-items: center;
   padding: 3rem 2rem;
-  gap: 2.75rem;
+  gap: 3rem;
 }
 
 .overlay-form-text {

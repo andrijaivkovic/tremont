@@ -313,12 +313,62 @@
   }
 
   .subscribe-text h1 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 
   .subscribe-text p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     letter-spacing: 0.5px;
+  }
+
+  .subscribe-button i {
+    font-size: 1.3rem;
+  }
+
+  .subscribe-button h6 {
+    font-size: 1.3rem;
+  }
+
+  /* == RESERVATION FORM 1366px == */
+
+  .overlay input {
+    font-size: 0.85rem;
+  }
+
+  .overlay input::placeholder {
+    font-size: 0.85rem;
+  }
+
+  .overlay-form {
+    justify-content: center;
+    padding: 2.75rem 1.75rem;
+    gap: 2.4rem;
+    max-width: 23rem;
+  }
+
+  .overlay-form-text {
+    gap: 0.85rem;
+  }
+
+  .overlay-form-text p {
+    font-size: 0.85rem;
+    padding-inline: 0px;
+  }
+
+  .overlay-form-text h2 {
+    font-size: 2rem;
+  }
+
+  .overlay-form-inputs {
+    gap: 2rem;
+  }
+
+  .overlay-button h6 {
+    font-size: 1.1rem;
+  }
+
+  .overlay-button i {
+    font-size: 1.1rem;
   }
 }
 
@@ -699,11 +749,66 @@
   }
 
   .subscribe-text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .subscribe-text p {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    line-height: 2.5;
+  }
+
+  .subscribe-button i {
+    font-size: 1.15rem;
+  }
+
+  .subscribe-button h6 {
+    font-size: 1.2rem;
+  }
+
+  /* == RESERVATION FORM 1024px == */
+
+  .overlay input {
+    font-size: 0.8rem;
+  }
+
+  .overlay input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .overlay-form {
+    justify-content: center;
+    padding: 2.75rem 1.75rem;
+    gap: 2.4rem;
+    max-width: 20rem;
+  }
+
+  .overlay-form-text {
+    gap: 0.7rem;
+  }
+
+  .overlay-form-text p {
+    font-size: 0.7rem;
+    padding-inline: 10px;
+  }
+
+  .overlay-form-text h2 {
+    font-size: 1.65rem;
+  }
+
+  .overlay-form-inputs {
+    gap: 1.5rem;
+  }
+
+  .overlay-button h6 {
+    font-size: 1.05rem;
+  }
+
+  .overlay-button i {
+    font-size: 1.05rem;
+  }
+
+  .ui-datepicker {
+    transform: scale(0.85) translateX(-28px);
   }
 }
 
@@ -723,6 +828,11 @@
 
   .mobile-nav-text a {
     font-size: 3.5rem;
+    margin: 2rem;
+  }
+
+  .mobile-nav-text a:last-of-type {
+    font-size: 2.5rem !important;
     margin: 2rem;
   }
 
@@ -1014,15 +1124,61 @@
   footer {
     margin: 12rem 0 12rem 0;
   }
+
+  /* == RESERVATION FORM TABLETS == */
+
+  .overlay-image {
+    display: none;
+  }
+
+  .overlay input {
+    font-size: 1rem;
+  }
+
+  .overlay input::placeholder {
+    font-size: 1rem;
+  }
+
+  .overlay-form {
+    gap: 2.75rem;
+    max-width: 27rem;
+  }
+
+  .overlay-form-text {
+    gap: 1rem;
+  }
+
+  .overlay-form-text p {
+    font-size: 1rem;
+    padding-inline: 0px;
+  }
+
+  .overlay-form-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-form-inputs {
+    gap: 2.5rem;
+  }
+
+  .overlay-button h6 {
+    font-size: 1.1rem;
+  }
+
+  .overlay-button i {
+    font-size: 1.1rem;
+  }
 }
 
-/* == PHONES == */
+/* == OTHER == */
 
 @media only screen and (max-width: 1749px) {
   .subscribe-image {
     display: none;
   }
 }
+
+/* == PHONES == */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* == GENERAL PHONE == */
@@ -1564,5 +1720,65 @@
   .footer-social {
     margin-top: 0.35rem;
     font-size: 1.25rem;
+  }
+
+  /* == RESERVATION FORM PHONES == */
+
+  .overlay-image {
+    display: none;
+  }
+
+  .overlay-form {
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .overlay-close {
+    display: block;
+    z-index: 10003;
+    top: 15px;
+    right: 25px;
+    font-size: 2.45rem;
+  }
+
+  .overlay input {
+    font-size: 0.8rem;
+  }
+
+  .overlay input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .overlay-form-text p {
+    font-size: 0.75rem;
+    padding-inline: 20px;
+  }
+
+  .overlay-form-text h2 {
+    font-size: 1.65rem;
+  }
+
+  .overlay-form {
+    justify-content: center;
+    gap: 1.75rem;
+  }
+
+  .overlay-form-inputs {
+    gap: 1.5rem;
+  }
+
+  .overlay-form-inputs hr {
+    margin-block: 0.75rem;
+  }
+
+  .overlay-form-inputs input {
+    width: 80%;
+  }
+
+  .overlay-form {
+    gap: 2.5rem;
   }
 }
