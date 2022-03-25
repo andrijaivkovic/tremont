@@ -56,11 +56,10 @@ function mobileNav() {
     addClass(navText, "fadeInUp");
     addClass(navBkg, "shown");
 
-    // ENABLE SCROLLING
-
+    // STOP USER FROM SCROLLING
     $("html, body").css({
-      overflow: "auto",
-      height: "auto",
+      overflow: "hidden",
+      height: "100%",
     });
   } else {
     changeAttribute(recLeft, "data-visible", "slided");
@@ -77,11 +76,10 @@ function mobileNav() {
     addClass(navText, "unfadeInUp");
     addClass(navBkg, "hidden");
 
-    // STOP USER FROM SCROLLING
-
+    // ENABLE SCROLLING
     $("html, body").css({
-      overflow: "hidden",
-      height: "100%",
+      overflow: "auto",
+      height: "auto",
     });
   }
 }
@@ -89,11 +87,14 @@ function mobileNav() {
 // == MENUS ==
 
 const japaneseContainer = $(".menus-container-japanese");
-const japaneseSelect = $(".menu-select-item-japanese");
+const japaneseSelect = $(".menu-select-text-japanese");
+// const btnJapanese = $(".menu-select-item-japanese");
 const westernContainer = $(".menus-container-western");
-const westernSelect = $(".menu-select-item-western");
+const westernSelect = $(".menu-select-text-western");
+// const btnWestern = $(".menu-select-item-western");
 const koreanContainer = $(".menus-container-korean");
-const koreanSelect = $(".menu-select-item-korean");
+const koreanSelect = $(".menu-select-text-korean");
+// const btnKorean = $(".menu-select-item-korean");
 
 const japaneseMenu = function () {
   let vis1 = getAttribute(westernContainer, "data-visible");
@@ -109,6 +110,9 @@ const japaneseMenu = function () {
     removeClass(westernSelect, "active");
     removeClass(koreanSelect, "active");
 
+    // removeClass(btnWestern, "line");
+    // removeClass(btnKorean, "line");
+
     addClass(westernContainer, "menu-hidden");
     addClass(koreanContainer, "menu-hidden");
 
@@ -116,6 +120,7 @@ const japaneseMenu = function () {
     removeClass(japaneseContainer, "menu-hidden");
     addClass(japaneseContainer, "menu-shown");
     addClass(japaneseSelect, "active");
+    // addClass(btnJapanese, "line");
   }
 };
 
@@ -133,6 +138,9 @@ const westernMenu = function () {
     removeClass(japaneseSelect, "active");
     removeClass(koreanSelect, "active");
 
+    // removeClass(btnJapanese, "line");
+    // removeClass(btnKorean, "line");
+
     addClass(japaneseContainer, "menu-hidden");
     addClass(koreanContainer, "menu-hidden");
 
@@ -140,6 +148,7 @@ const westernMenu = function () {
     removeClass(westernContainer, "menu-hidden");
     addClass(westernContainer, "menu-shown");
     addClass(westernSelect, "active");
+    // addClass(btnWestern, "line");
   }
 };
 
@@ -157,6 +166,9 @@ const koreanMenu = function () {
     removeClass(japaneseSelect, "active");
     removeClass(westernSelect, "active");
 
+    // removeClass(btnJapanese, "line");
+    // removeClass(btnWestern, "line");
+
     addClass(japaneseContainer, "menu-hidden");
     addClass(westernContainer, "menu-hidden");
 
@@ -164,5 +176,6 @@ const koreanMenu = function () {
     removeClass(koreanContainer, "menu-hidden");
     addClass(koreanContainer, "menu-shown");
     addClass(koreanSelect, "active");
+    // addClass(btnKorean, "line");
   }
 };

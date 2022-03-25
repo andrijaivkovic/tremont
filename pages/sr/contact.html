@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,14 +10,14 @@
     />
     <meta
       name="keywords"
-      content="restaurant, Tremont, high-end, relaxing, food, drink, Paris, France, contact, contact us"
+      content="restoran, Tremont, Trémont, visok kvalitet, opuštajuće, hrana, pice, Pariz, Francuska, kontakt, kontaktiraj"
     />
     <meta name="author" content="Andrija Ivkovic" />
-    <title>Trémont Restaurant - Contact</title>
-    <link rel="icon" href="../images/fav/fav.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/queries.css" />
-    <link rel="stylesheet" href="../lib/aos.css" />
+    <title>Restoran Trémont - Kontakt</title>
+    <link rel="icon" href="../../images/fav/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/queries.css" />
+    <link rel="stylesheet" href="../../lib/aos.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -35,9 +35,9 @@
         data-visible="faded"
         class="mobile-nav-text opacity-0 unfadeInUp flex"
       >
-        <a href="../index.html"><p>Home</p></a
-        ><a href="menu.html"><p>Menu</p></a><a href="about.html"><p>About</p></a
-        ><a href="contact.html"><p class="active">Contact</p></a>
+        <a href="../sr/index.html"><p>Početna</p></a
+        ><a href="../sr/menu.html"><p>Meni</p></a><a href="../sr/about.html"><p>O nama</p></a
+        ><a href="../sr/contact.html"><p class="active">Kontakt</p></a>
       </div>
       <div class="mobile-nav-background hidden flex-row">
         <div
@@ -55,7 +55,7 @@
     <header id="nav" class="primary-header flex" style="top: 0px">
       <div class="gradient-top"></div>
       <div class="logo">
-        <a title="Logo - Home Page" href="../index.html">
+        <a title="Logo - Početna Strana" href="../sr/index.html">
           <h1 class="logo-nav flex font-ambroise-regular color-white">
             TRÉMONT
           </h1>
@@ -93,44 +93,44 @@
           </button>
           <li>
             <a
-              title="Home Page"
-              aria-label="Home Page,"
+              title="Početna Strana"
+              aria-label="Početna Strana,"
               class="font-calluna-light color-white link"
-              href="../index.html"
-              >Home</a
+              href="../sr/index.html"
+              >Početna</a
             >
           </li>
           <li>
             <a
-              title="Menu Page"
-              aria-label="Menu Page,"
+              title="Meni Strana"
+              aria-label="Meni Strana,"
               class="font-calluna-light color-white"
-              href="menu.html"
-              >Menu</a
+              href="../sr/menu.html"
+              >Meni</a
             >
           </li>
           <li>
             <a
-              title="About Page"
-              aria-label="About Page,"
+              title="O Nama Strana"
+              aria-label="O Nama Strana,"
               class="font-calluna-light color-white"
-              href="about.html"
-              >About</a
+              href="../sr/about.html"
+              >O nama</a
             >
           </li>
           <li>
             <a
-              title="Contact Page"
-              aria-label="Contact Page,"
+              title="Kontakt Strana"
+              aria-label="Kontakt Strana,"
               class="active font-calluna-light color-white more-padding"
               href="#"
-              >Contact</a
+              >Kontakt</a
             >
           </li>
           <li>
             <a
-              title="Our Facebook Page"
-              aria-label="Our Facebook Page,"
+              title="Naša Facebook Stranica"
+              aria-label="Naša Facebook Stranica,"
               class="social color-white"
               href="#"
               ><i class="fab fa-facebook-square"></i
@@ -138,8 +138,8 @@
           </li>
           <li>
             <a
-              title="Our Instagram Profile"
-              aria-label="Our Instagram Profile,"
+              title="Naš Instagram Profil"
+              aria-label="Naš Instagram Profil,"
               class="social color-white"
               href="#"
               ><i class="fab fa-instagram"></i
@@ -147,18 +147,27 @@
           </li>
           <li>
             <a
-              title="Our Yelp Profile"
-              aria-label="Our Yelp Profile,"
+              title="Naš Yelp Profil"
+              aria-label="Naš Yelp Profil,"
               class="social color-white"
               href="#"
               ><i class="fab fa-yelp"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              title="Switch to Serbian Language"
+              aria-label="This button switches the language of the website to Serbian,"
+              class="font-calluna-light color-white"
+              href="../en-US/contact.html"
+              >EN</i
             ></a>
           </li>
         </ul>
       </nav>
     </header>
     <div style="padding-top: 12rem" class="body-container flex-column">
-      <section style="z-index: 10" class="contact flex-row">
+      <section style="z-index: 10;" class="contact flex-row z-200">
         <div
           data-aos-offset="300"
           data-aos-once="false"
@@ -168,66 +177,68 @@
           class="contact-text flex-column"
         >
           <div
-            aria-label="Contact,"
+            aria-labelledby="contact-title"
             class="contact-text-title color-white font-calluna-bold flex"
           >
-            <h1>Contact</h1>
+            <h1 id="contact-title">Kontakt</h1>
           </div>
           <div
             class="contact-text-info flex-column color-white font-montserrat-light"
           >
             <div class="info flex-row">
               <i class="fal fa-map-marker-alt fa-fw color-accent"></i>
-              <p aria-label="Our Location: 118, Random Street, Paris, France,">
-                118 Random Street<br />
-                75006 Paris<br />
-                France
+              <p
+                aria-label="Naša lokacija: 118, Nasumična Ulica, Pariz, Francuska,"
+              >
+                118 Nasumična Ulica<br />
+                75006 Pariz<br />
+                Francuska
               </p>
             </div>
             <div class="info flex-row">
               <i class="fal fa-clock fa-fw color-accent"></i>
               <p
-                aria-label="Our Working Hours: Monday to Friday: 10am to 9pm; Saturday to Sunday: 10am to 11pm,"
+                aria-label="Naši radni sati: Ponedeljak do Petka: 10 časova do 21 čas; Subota do Nedelje: 10 časova do 23 časa,"
               >
-                Mon - Fri: 10am - 9pm<br />
-                Sat - Sun: 10am - 11pm
+                Pon - Pet: 10h - 21h<br />
+                Sub - Ned: 10h - 23h
               </p>
             </div>
             <div class="info flex-row">
               <i class="fal fa-phone-alt fa-fw color-accent"></i>
-              <p aria-label="Our Phone Number: 011, 25, 07, 260,">
+              <p aria-label="Naš broj telefona: 011, 25, 07, 260,">
                 011 25 07 260
               </p>
             </div>
             <div class="info flex-row font-montserrat-bold">
               <i class="fal fa-comment fa-fw color-accent"></i>
-              <p>Message Us</p>
+              <p aria-label=", Pošaljite nam poruku, ">Poruka</p>
             </div>
           </div>
           <div class="contact-text-form flex-column">
             <form class="contact-form flex-column" action="">
               <input
-                aria-label="Type in your full name,"
+                aria-label="Ukucajte svoje puno ime,"
                 autocomplete="off"
-                placeholder="Full Name"
+                placeholder="Puno Ime"
                 type="text"
               />
               <input
-                aria-label="Type in your phone number,"
+                aria-label="Ukucajte svoj broj telefona,"
                 autocomplete="off"
-                placeholder="Phone Number"
+                placeholder="Broj Telefona"
                 type="tel"
               />
               <input
-                aria-label="Type in your email address,"
+                aria-label="Ukucajte svoju email adresu,"
                 autocomplete="off"
-                placeholder="Email Address"
+                placeholder="Email Adresa"
                 type="email"
               />
               <textarea
-                aria-label="Type in your message, "
+                aria-label="Ukucajte svoju poruku, "
                 autocomplete="off"
-                placeholder="Your Message"
+                placeholder="Vaša Poruka"
                 name=""
                 id=""
                 cols="10"
@@ -236,19 +247,19 @@
             </form>
             <div class="contact-button flex">
               <a
-                aria-laber=". Send Message,"
+                aria-label=". Pošaljite poruku,"
                 class="font-montserrat-regular color-white flex"
                 href="#"
-                ><h6>Send Message</h6>
+                ><h6>Pošalji</h6>
                 <i class="fal fa-chevron-right arrow"></i>
               </a>
             </div>
           </div>
         </div>
         <div
-          data-aos-offset="0"
+          data-aos-offset="300"
           data-aos-once="false"
-          data-aos-delay="500"
+          data-aos-delay="150"
           data-aos-easing="ease-in-out"
           data-aos-duration="525"
           data-aos="fade-left"
@@ -267,24 +278,24 @@
       <div class="footer-container flex-column z-200">
         <h1 class="footer-logo font-ambroise-regular color-white">TRÉMONT</h1>
         <p class="footer-copyright font-montserrat-light color-light-grey">
-          © Trémont Restaurant. All Rights Reserved.
+          © Restoran Trémont. Sva prava zadržana.
         </p>
         <div class="footer-social flex-row">
           <a
-            title="Our Facebook Page"
-            aria-label="Our Facebook Page,"
+            title="Naša Facebook stranica"
+            aria-label="Naša Facebook stranica,"
             class="social color-white"
             href="#"
             ><i class="fab fa-facebook-square"></i></a
           ><a
-            title="Our Instagram Profile"
-            aria-label="Our Instagram Profile,"
+            title="Naš Instagram profil"
+            aria-label="Naš Instagram profil,"
             class="social color-white"
             href="#"
             ><i class="fab fa-instagram"></i></a
           ><a
-            title="Our Yelp Profile"
-            aria-label="Our Yelp Profile,"
+            title="Naš Yelp profil"
+            aria-label="Naš Yelp profil,"
             class="social color-white"
             href="#"
             ><i class="fab fa-yelp"></i
@@ -302,8 +313,8 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"
   ></script>
-  <script src="../scripts/scripts.js"></script>
-  <script src="../lib/aos.js"></script>
+  <script src="../../scripts/scripts.js"></script>
+  <script src="../../lib/aos.js"></script>
   <script>
     AOS.init({
       disable: "mobile",

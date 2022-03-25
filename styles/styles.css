@@ -26,16 +26,19 @@
 @font-face {
   font-family: "Montserrat-Regular";
   src: url("../fonts/montserrat-regular.woff2") format("woff2");
+  src: url("../fonts/montserrat-regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat-Light";
   src: url("../fonts/montserrat-light.woff2") format("woff2");
+  src: url("../fonts/montserrat-light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("../fonts/montserrat-bold.woff2") format("woff2");
+  src: url("../fonts/montserrat-bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -405,8 +408,12 @@ section {
   scroll-margin-top: 150px;
 }
 
+#menu {
+  scroll-margin-top: 250px;
+}
+
 ::placeholder {
-  color: var(--primary-color);
+  color: var(--light-grey-color);
   opacity: 1;
   font-family: Montserrat-Light;
   font-size: 1.125rem;
@@ -679,6 +686,7 @@ textarea {
 
 .hero-text {
   transition: 0.4s;
+  animation: fadeInUp 0.5s 0s ease-in-out;
   z-index: 10;
   filter: drop-shadow(4px 4px 20px #000);
   flex-direction: column;
@@ -690,20 +698,24 @@ textarea {
 }
 
 .hero-logo {
-  transition: inherit;
+  opacity: 0;
+  animation: fadeInUp 0.5s 0s ease-in-out forwards;
   letter-spacing: 0.3rem;
   font-size: clamp(2vmin, 2vmin + 5vw, 2.7vmax);
   padding-bottom: 1.5rem;
 }
 
 .hero-message {
-  transition: inherit;
+  opacity: 0;
+  animation: fadeInUp 0.5s 0.2s ease-in-out forwards;
   letter-spacing: 0.1rem;
   font-size: clamp(5vmin, 3vmin + 10vw, 3vmax);
 }
 
 .hero-button {
-  transition: inherit;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeInUp 0.5s 0.4s ease-in-out forwards;
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
@@ -886,7 +898,34 @@ a:hover .arrow {
 .menu-select {
   margin-right: 4.166vw;
   align-items: flex-end;
+  /* width: 15rem; */
 }
+
+.menu-select span {
+  color: var(--light-grey-color);
+  background-color: var(--background-color);
+  /* padding-left: 1.25rem; */
+}
+
+/*
+
+.menu-select button::before {
+  background-color: var(--accent-color);
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 1px;
+  top: 20px;
+  transition: 0.3s ease-in-out;
+  transform: scale(0%);
+  transform-origin: left;
+}
+
+.menu-select button.line::before {
+  transform: scale(100%);
+} */
 
 .menu-text {
   display: none;
@@ -902,6 +941,11 @@ a:hover .arrow {
   margin-top: 2.5rem;
   text-align: end;
 }
+
+/* button[class*="menu-select-item"] {
+  width: 100%;
+  position: relative;
+} */
 
 .menu-select button:first-of-type {
   margin-top: 0rem;
@@ -933,19 +977,7 @@ a:hover .arrow {
   margin-bottom: 0rem;
 }
 
-.menu-content-middle-eastern {
-  justify-content: center;
-}
-
-.menu-content-western {
-  justify-content: center;
-}
-
-.menu-content-korean {
-  justify-content: center;
-}
-
-.menu-content-japanese {
+div[class*="menu-content"] {
   justify-content: center;
 }
 
@@ -1196,3 +1228,166 @@ footer {
   height: 200vh;
   width: 100vh;
 } */
+
+/* == RESERVATION FORM == */
+
+.overlay {
+  display: none;
+  z-index: 10000;
+  height: 100vh;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+}
+
+.overlay-close {
+  position: absolute;
+  top: 35px;
+  right: 325px;
+  color: var(--primary-color);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.overlay-close:hover {
+  color: var(--accent-color);
+}
+
+.overlay input {
+  font-size: 1rem;
+}
+
+.overlay input::placeholder {
+  font-size: 1rem;
+}
+
+.overlay-background {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px) brightness(50%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay-form {
+  background-color: var(--dark-grey-color);
+  max-width: 25rem;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2.75rem;
+}
+
+.overlay-form-text {
+  align-items: center;
+  gap: 1rem;
+}
+
+.overlay-form-text p {
+  text-align: center;
+  font-size: 1rem;
+  padding-inline: px;
+  line-height: 1.5;
+  letter-spacing: 0.75px;
+}
+
+.overlay-form-text h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.overlay-form-inputs {
+  gap: 2.25rem;
+  width: 100%;
+  align-items: center;
+}
+
+.overlay-form-inputs hr {
+  width: 100%;
+  margin-block: 1rem;
+  border-color: #707070;
+}
+
+.overlay-form-inputs input {
+  width: 85%;
+}
+
+.overlay-image img {
+  height: 100%;
+}
+
+.overlay-button {
+  align-self: flex-end;
+  margin-right: 25px;
+}
+
+.overlay-button h6 {
+  font-size: 1.25rem;
+}
+
+.overlay-button i {
+  font-size: 1.25rem;
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+/* == RESERVATION CALENDAR */
+
+.ui-datepicker {
+  background-color: var(--dark-grey-color);
+  border: 1px solid var(--primary-color);
+  font-family: Montserrat-Light, sans-serif;
+  color: #fff;
+  z-index: 10001 !important;
+}
+
+.ui-datepicker span {
+  color: #fff;
+}
+
+.ui-datepicker a {
+  color: var(--primary-color);
+}
+
+.ui-datepicker-calendar span {
+  color: var(--accent-color);
+}
+
+.ui-datepicker a:hover {
+  color: var(--accent-color);
+}
+
+/* Previous */
+
+.ui-icon-circle-triangle-w {
+  background-color: var(--primary-color);
+  -webkit-mask-image: url("/images/icons/chevron-left-solid.svg");
+  mask-image: url("/images/icons/chevron-left-solid.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+}
+
+.ui-icon-circle-triangle-w:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* Next */
+
+.ui-icon-circle-triangle-e {
+  background-color: var(--primary-color);
+  -webkit-mask-image: url("/images/icons/chevron-right-solid.svg");
+  mask-image: url("/images/icons/chevron-right-solid.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+}
+
+.ui-icon-circle-triangle-e:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
