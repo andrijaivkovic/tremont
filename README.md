@@ -18,7 +18,7 @@ of text has a rich description for those using assistive technologies.
 
 :heavy_check_mark: JS clean-up
 
-:x: Add Reservation form
+:heavy_check_mark: Add Reservation form
 
 :heavy_check_mark: SEO
 
