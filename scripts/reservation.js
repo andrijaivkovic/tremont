@@ -20,31 +20,33 @@ $("#input-time").timepicker({
   scrollbar: false,
 });
 
-function openOverlay() {
-  $(".overlay").css("display", "flex");
-  //   $("html, body").css({
-  //     overflow: "hidden",
-  //     height: "100%",
-  //   });
-}
-
-function closeOverlay() {
-  $(".overlay").css("display", "none");
-  //   $("html, body").css({
-  //     overflow: "auto",
-  //     height: "auto",
-  //   });
-}
-
-// Validate Reservation Form
-
 const inputName = document.getElementById("input-name");
 const inputEmail = document.getElementById("input-email");
 const inputPhone = document.getElementById("input-phone");
 const inputDate = document.getElementById("input-date");
 const inputTime = document.getElementById("input-time");
 const inputGuests = document.getElementById("input-guests");
-const overlay = document.getElementsByClassName("overlay");
+const overlay = document.getElementById("overlay");
+
+function openOverlay() {
+  overlay.style.display = "flex";
+  // stop from scrolling
+}
+
+function closeOverlay() {
+  // clear input
+  inputName.value = "";
+  inputEmail.value = "";
+  inputPhone.value = "";
+  inputDate.value = "";
+  inputTime.value = "";
+  inputGuests.value = "";
+
+  overlay.style.display = "none";
+  // enable scrolling
+}
+
+// Validate Reservation Form
 
 inputName.addEventListener("focus", function () {
   inputName.placeholder = "Full Name";
@@ -108,7 +110,7 @@ function validateForm() {
       inputTime.value = "";
       inputGuests.value = "";
 
-      $(".overlay").css("display", "none");
+      overlay.style.display = "none";
 
       console.log(reservation);
       alert("Reservation Successful!");
