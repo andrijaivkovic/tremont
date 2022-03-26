@@ -14,6 +14,8 @@ of text has a rich description for those using assistive technologies.
 
 ## TODO
 
+:heavy_check_mark: Form Validation
+
 :heavy_check_mark: Serbian Localization
 
 :heavy_check_mark: JS clean-up
