@@ -387,28 +387,24 @@
                 </div>
               </div>
               <div class="contact-text-form flex-column">
-                <form class="contact-form flex-column" action="">
+                <form autocomplete="off" class="contact-form flex-column" action="">
                   <input
                     aria-label="Type in your full name,"
-                    autocomplete="off"
                     placeholder="Full Name"
                     type="text"
                   />
                   <input
                     aria-label="Type in your phone number,"
-                    autocomplete="off"
                     placeholder="Phone Number"
                     type="tel"
                   />
                   <input
                     aria-label="Type in your email address,"
-                    autocomplete="off"
                     placeholder="Email Address"
                     type="email"
                   />
                   <textarea
                     aria-label="Type in your message, "
-                    autocomplete="off"
                     placeholder="Your Message"
                     name=""
                     id=""
@@ -556,7 +552,6 @@
             </div>
           </div>
         </footer>
-        <!-- overlay -->
         <div id="overlay" class="overlay">
           <div onclick="closeOverlay()" class="overlay-background"></div>
           <div onclick="closeOverlay()" class="overlay-close"><i class="fal fa-times"></i></div>
@@ -574,16 +569,16 @@
                 class="overlay-form-inputs flex-column"
                 action=""
               >
-                <input id="input-name" placeholder="Full Name" type="text" />
-                <input id="input-email" placeholder="Email Address" type="email" />
-                <input id="input-phone" placeholder="Phone Number" type="tel" />
+                <input aria-label="Type in your full name, " id="input-name" placeholder="Full Name" type="text" />
+                <input aria-label="Type in your email address, " id="input-email" placeholder="Email Address" type="email" />
+                <input aria-label="Type in your phone number, " id="input-phone" placeholder="Phone Number" type="tel" />
                 <hr />
-                <input id="input-date" placeholder="Reservation Date" type="text" />
-                <input id="input-time" placeholder="Reservation Time" type="text" />
-                <input id="input-guests" placeholder="Number Of Guests" type="text" />
+                <input aria-label="Input reservation date, " id="input-date" placeholder="Reservation Date" type="text" />
+                <input aria-label="Input reservation time, " id="input-time" placeholder="Reservation Time" type="text" />
+                <input aria-label="Input number of guests, " id="input-guests" placeholder="Number Of Guests" type="text" />
               </form>
               <div onclick="validateForm()" class="overlay-button flex">
-                <a class="font-calluna-light color-white flex" href="#"
+                <a aria-label=", Confirm Reservation info, " class="font-calluna-light color-white flex" href="#"
                   ><h6>Reservation</h6>
                   <i class="fal fa-chevron-right arrow"></i>
                 </a>
