@@ -217,24 +217,28 @@
           <div class="contact-text-form flex-column">
             <form class="contact-form flex-column" action="">
               <input
+                id="message-input-name"
                 aria-label="Type in your full name,"
                 autocomplete="off"
                 placeholder="Full Name"
                 type="text"
               />
               <input
-                aria-label="Type in your phone number,"
-                autocomplete="off"
-                placeholder="Phone Number"
-                type="tel"
-              />
-              <input
+                id="message-input-email"
                 aria-label="Type in your email address,"
                 autocomplete="off"
                 placeholder="Email Address"
                 type="email"
               />
+              <input
+                id="message-input-phone"
+                aria-label="Type in your phone number,"
+                autocomplete="off"
+                placeholder="Phone Number"
+                type="tel"
+              />
               <textarea
+                id="message-input-text"
                 aria-label="Type in your message, "
                 autocomplete="off"
                 placeholder="Your Message"
@@ -244,8 +248,9 @@
                 rows="5"
               ></textarea>
             </form>
-            <div class="contact-button flex">
+            <div onclick="validateMessageForm()" class="contact-button flex">
               <a
+                href="javascript:void(0)"
                 aria-label=". Send Message,"
                 class="font-montserrat-regular color-white flex"
                 href="#"
@@ -313,6 +318,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="../../scripts/scripts.js"></script>
+  <script src="../../scripts/contact-validation.js"></script>
   <script src="../../lib/aos.js"></script>
   <script>
     AOS.init({

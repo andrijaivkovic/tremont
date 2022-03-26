@@ -19,11 +19,6 @@
       href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
       type="text/css"
     />
-    <script>
-      src = "https://code.jquery.com/jquery-3.6.0.min.js";
-      integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=";
-      crossorigin = "anonymous";
-    </script>
   </head>
   <body>
     <div class="mobile-nav flex">
@@ -175,6 +170,7 @@
         </div>
         <div onclick="openOverlay()" class="hero-button flex">
           <a
+            href="javascript:void(0)"
             aria-label=", Reservation, this button opens the Resetvation form, "
             class="font-calluna-light color-white flex"
             ><h6>Reservation</h6>
@@ -389,21 +385,25 @@
               <div class="contact-text-form flex-column">
                 <form autocomplete="off" class="contact-form flex-column" action="">
                   <input
+                    id="message-input-name"
                     aria-label="Type in your full name,"
                     placeholder="Full Name"
                     type="text"
                   />
                   <input
-                    aria-label="Type in your phone number,"
-                    placeholder="Phone Number"
-                    type="tel"
-                  />
-                  <input
+                    id="message-input-email"
                     aria-label="Type in your email address,"
                     placeholder="Email Address"
                     type="email"
                   />
+                  <input
+                    id="message-input-phone"
+                    aria-label="Type in your phone number,"
+                    placeholder="Phone Number"
+                    type="tel"
+                  />
                   <textarea
+                    id="message-input-text"
                     aria-label="Type in your message, "
                     placeholder="Your Message"
                     name=""
@@ -412,11 +412,12 @@
                     rows="5"
                   ></textarea>
                 </form>
-                <div class="contact-button flex">
+                <div onclick="validateMessageForm()" class="contact-button flex">
                   <a
+                    href="javascript:void(0)"
                     aria-label=". Send Message,"
                     class="font-montserrat-regular color-white flex"
-                    href="#"
+                    href=""
                     ><h6>Send Message</h6>
                     <i class="fal fa-chevron-right arrow"></i>
                   </a>
@@ -506,13 +507,14 @@
                 </p>
                 <form action="">
                   <input
+                    id="subscribe-input-email"
                     autocomplete="off"
                     placeholder="Your Email Address"
                     type="email"
                   />
                 </form>
-                <div class="subscribe-button flex">
-                  <a class="font-montserrat-regular color-white flex" href="#"
+                <div onclick="validateSubscribeForm()" class="subscribe-button flex">
+                  <a href="javascript:void(0)" class="font-montserrat-regular color-white flex"
                     ><h6>Subscribe</h6>
                     <i class="fal fa-chevron-right arrow"></i>
                   </a>
@@ -552,7 +554,7 @@
             </div>
           </div>
         </footer>
-        <div id="overlay" class="overlay">
+        <div id="reservation-overlay" class="overlay">
           <div onclick="closeOverlay()" class="overlay-background"></div>
           <div onclick="closeOverlay()" class="overlay-close"><i class="fal fa-times"></i></div>
           <div class="overlay-form-image flex-row">
@@ -569,16 +571,16 @@
                 class="overlay-form-inputs flex-column"
                 action=""
               >
-                <input aria-label="Type in your full name, " id="input-name" placeholder="Full Name" type="text" />
-                <input aria-label="Type in your email address, " id="input-email" placeholder="Email Address" type="email" />
-                <input aria-label="Type in your phone number, " id="input-phone" placeholder="Phone Number" type="tel" />
+                <input aria-label="Type in your full name, " id="reservation-input-name" placeholder="Full Name" type="text" />
+                <input aria-label="Type in your email address, " id="reservation-input-email" placeholder="Email Address" type="email" />
+                <input aria-label="Type in your phone number, " id="reservation-input-phone" placeholder="Phone Number" type="tel" />
                 <hr />
-                <input aria-label="Input reservation date, " id="input-date" placeholder="Reservation Date" type="text" />
-                <input aria-label="Input reservation time, " id="input-time" placeholder="Reservation Time" type="text" />
-                <input aria-label="Input number of guests, " id="input-guests" placeholder="Number Of Guests" type="text" />
+                <input aria-label="Input reservation date, " id="reservation-input-date" placeholder="Reservation Date" type="text" />
+                <input aria-label="Input reservation time, " id="reservation-input-time" placeholder="Reservation Time" type="text" />
+                <input aria-label="Input number of guests, " id="reservation-input-guests" placeholder="Number Of Guests" type="text" />
               </form>
-              <div onclick="validateForm()" class="overlay-button flex">
-                <a aria-label=", Confirm Reservation info, " class="font-calluna-light color-white flex" href="#"
+              <div onclick="validateReservationForm()" class="overlay-button flex">
+                <a href="javascript:void(0)" aria-label=", Confirm Reservation info, " class="font-calluna-light color-white flex"
                   ><h6>Reservation</h6>
                   <i class="fal fa-chevron-right arrow"></i>
                 </a>
@@ -608,28 +610,29 @@
             </div>
           </div>
         </div>
-        </body>
         <script
-          src="https://kit.fontawesome.com/c7be3f5b26.js"
-          crossorigin="anonymous"
-        ></script>
-        <script
-          src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-          crossorigin="anonymous"
-        ></script>
-        <script
-        src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
-        integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+        src="https://kit.fontawesome.com/c7be3f5b26.js"
         crossorigin="anonymous"
       ></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
-        <script src="scripts/scripts.js"></script>
-        <script src="scripts/reservation.js"></script>
-        <script src="lib/aos.js"></script>
-    <script>
-      AOS.init({
-        disable: "mobile",
-      });
-    </script>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+      <script
+      src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+      integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+      crossorigin="anonymous"
+    ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+      <script src="scripts\scripts.js"></script>
+      <script src="scripts\form-validation.js"></script>
+      <script src="scripts\contact-validation.js"></script>
+      <script src="lib/aos.js"></script>
+  <script>
+    AOS.init({
+      disable: "mobile",
+    });
+  </script>
+        </body>
 </html>

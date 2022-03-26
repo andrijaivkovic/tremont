@@ -157,8 +157,8 @@
           </li>
           <li>
             <a
-              title="Switch to Serbian Language"
-              aria-label="This button switches the language of the website to Serbian,"
+              title="Promenite jezik na Engleski"
+              aria-label="Ovo dugme menja jezik sajta na Engleski,"
               class="font-calluna-light color-white"
               href="../en-US/contact.html"
               >EN</i
@@ -219,24 +219,28 @@
           <div class="contact-text-form flex-column">
             <form class="contact-form flex-column" action="">
               <input
+                id="message-input-name"
                 aria-label="Ukucajte svoje puno ime,"
                 autocomplete="off"
                 placeholder="Puno Ime"
                 type="text"
               />
               <input
-                aria-label="Ukucajte svoj broj telefona,"
-                autocomplete="off"
-                placeholder="Broj Telefona"
-                type="tel"
-              />
-              <input
+                id="message-input-email"
                 aria-label="Ukucajte svoju email adresu,"
                 autocomplete="off"
                 placeholder="Email Adresa"
                 type="email"
               />
+              <input
+                id="message-input-phone"
+                aria-label="Ukucajte svoj broj telefona,"
+                autocomplete="off"
+                placeholder="Broj Telefona"
+                type="tel"
+              />
               <textarea
+                id="message-input-text"
                 aria-label="Ukucajte svoju poruku, "
                 autocomplete="off"
                 placeholder="Vaša Poruka"
@@ -246,8 +250,9 @@
                 rows="5"
               ></textarea>
             </form>
-            <div class="contact-button flex">
+            <div onclick="validateMessageForm()" class="contact-button flex">
               <a
+                href="javascript:void(0)"
                 aria-label=". Pošaljite poruku,"
                 class="font-montserrat-regular color-white flex"
                 href="#"
@@ -315,6 +320,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="../../scripts/scripts.js"></script>
+  <script src="../../scripts/contact-validation.js"></script>
   <script src="../../lib/aos.js"></script>
   <script>
     AOS.init({

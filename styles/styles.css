@@ -655,7 +655,7 @@ textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("../images/hero/hero-home.jpg");
+  background-image: url(../images/hero/hero-home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -669,7 +669,7 @@ textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("../images/hero/hero-menu.jpg");
+  background-image: url(../images/hero/hero-menu.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -683,7 +683,7 @@ textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url("../images/hero/hero-about.jpg");
+  background-image: url(../images/hero/hero-about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -1368,8 +1368,8 @@ footer {
 
 .ui-icon-circle-triangle-w {
   background-color: var(--primary-color);
-  -webkit-mask-image: url("/images/icons/chevron-left-solid.svg");
-  mask-image: url("/images/icons/chevron-left-solid.svg");
+  -webkit-mask-image: url("../images/icons/chevron-left-solid.svg");
+  mask-image: url("../images/icons/chevron-left-solid.svg");
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   height: 20px;
@@ -1385,8 +1385,8 @@ footer {
 
 .ui-icon-circle-triangle-e {
   background-color: var(--primary-color);
-  -webkit-mask-image: url("/images/icons/chevron-right-solid.svg");
-  mask-image: url("/images/icons/chevron-right-solid.svg");
+  -webkit-mask-image: url("../images/icons/chevron-right-solid.svg");
+  mask-image: url("../images/icons/chevron-right-solid.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   height: 20px;
