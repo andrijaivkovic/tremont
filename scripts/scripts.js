@@ -1,19 +1,28 @@
 "use strict";
 
-// == HIDE NAVBAR ==
+// Helper functions and variables
 
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    $("#nav").css({ top: "0px" });
-  } else {
-    $("#nav").css({ top: "-100px" });
-  }
-  prevScrollpos = currentScrollPos;
+// Variables
+
+const language = document.documentElement.lang;
+
+// Functions
+
+let clearValue = function (element) {
+  element.value = "";
 };
 
-// == MOBILE NAV ==
+let errorMessage = function (element, text) {
+  element.placeholder = text;
+  element.style.borderColor = "#ff6961";
+  element.classList.add("red-placeholder");
+};
+
+let clearError = function (element, text) {
+  element.placeholder = text;
+  element.style.borderColor = "white";
+  element.classList.remove("red-placeholder");
+};
 
 const addClass = function (elementName, className) {
   elementName.addClass(className);
@@ -30,6 +39,21 @@ const changeAttribute = function (elementName, attributeName, attributeValue) {
 const getAttribute = function (elementName, attributeName) {
   return elementName.attr(attributeName);
 };
+
+// == HIDE NAVBAR ==
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    $("#nav").css({ top: "0px" });
+  } else {
+    $("#nav").css({ top: "-100px" });
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+// == MOBILE NAV ==
 
 const recLeft = $(".rectangle-left");
 const recRight = $(".rectangle-right");

@@ -1,31 +1,11 @@
 "use strict";
 
-// Helper functions
-
-let clearValue = function (element) {
-  element.value = "";
-};
-
-let errorMessage = function (element, text) {
-  element.placeholder = text;
-  element.style.borderColor = "#ff6961";
-  element.classList.add("red-placeholder");
-};
-
-let clearError = function (element, text) {
-  element.placeholder = text;
-  element.style.borderColor = "white";
-  element.classList.remove("red-placeholder");
-};
-
 // == MESSAGE FORM ==
 
 const messageInputName = document.getElementById("message-input-name");
 const messageInputPhone = document.getElementById("message-input-phone");
 const messageInputEmail = document.getElementById("message-input-email");
 const messageInputText = document.getElementById("message-input-text");
-
-const language = document.documentElement.lang;
 
 // Clear error message on focus
 

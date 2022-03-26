@@ -34,7 +34,7 @@
         ><a href="#hero"><p class="active">Menu</p></a
         ><a href="../en-US/about.html"><p>About</p></a
         ><a href="../en-US/contact.html"><p>Contact</p></a>
-        <a style="font-size: 1.5rem;" href="../sr/menu.html"><p>SR</p></a>
+        <a style="font-size: 1.5rem" href="../sr/menu.html"><p>SR</p></a>
       </div>
       <div class="mobile-nav-background hidden flex-row">
         <div
@@ -150,15 +150,15 @@
               href="#"
               ><i class="fab fa-yelp"></i
             ></a>
-            <li>
-              <a
-                title="Switch to Serbian Language"
-                aria-label="This button switches the language of the website to Serbian,"
-                class="font-calluna-light color-white"
-                href="../sr/menu.html"
-                >SR</i
-              ></a>
-            </li>
+          </li>
+          <li>
+            <a
+              title="Switch to Serbian Language"
+              aria-label="This button switches the language of the website to Serbian,"
+              class="font-calluna-light color-white"
+              href="../sr/menu.html"
+              >SR</a
+            >
           </li>
         </ul>
       </nav>
@@ -1044,13 +1044,19 @@
             </p>
             <form action="">
               <input
+                id="subscribe-input-email"
                 autocomplete="off"
                 placeholder="Your Email Address"
                 type="email"
               />
             </form>
-            <div class="subscribe-button flex">
-              <a class="font-montserrat-regular color-white flex" href="#"
+            <div
+              onclick="validateSubscribeForm()"
+              class="subscribe-button flex"
+            >
+              <a
+                href="javascript:void(0)"
+                class="font-montserrat-regular color-white flex"
                 ><h6>Subscribe</h6>
                 <i class="fal fa-chevron-right arrow"></i>
               </a>
@@ -1097,7 +1103,13 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+      integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+      crossorigin="anonymous"
+    ></script>
     <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/subscribe-validation.js"></script>
     <script src="../../lib/aos.js"></script>
     <script>
       AOS.init({

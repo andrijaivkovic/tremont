@@ -19,8 +19,6 @@ $("#reservation-input-time").timepicker({
   scrollbar: false,
 });
 
-const language = document.documentElement.lang;
-
 const resInputName = document.getElementById("reservation-input-name");
 const resInputEmail = document.getElementById("reservation-input-email");
 const resInputPhone = document.getElementById("reservation-input-phone");
@@ -28,24 +26,6 @@ const resInputDate = document.getElementById("reservation-input-date");
 const resInputTime = document.getElementById("reservation-input-time");
 const resInputGuests = document.getElementById("reservation-input-guests");
 const resOverlay = document.getElementById("reservation-overlay");
-
-// Helper functions
-
-let clearValue = function (element) {
-  element.value = "";
-};
-
-let errorMessage = function (element, text) {
-  element.placeholder = text;
-  element.style.borderColor = "#ff6961";
-  element.classList.add("red-placeholder");
-};
-
-let clearError = function (element, text) {
-  element.placeholder = text;
-  element.style.borderColor = "white";
-  element.classList.remove("red-placeholder");
-};
 
 // == RESERVATION OVERLAY ==
 
@@ -225,149 +205,6 @@ const validateReservationForm = function () {
         language === "en"
           ? "Please Input Number Of Guests"
           : "Molimo Unesite Broj Gostiju"
-      );
-    }
-  }
-};
-
-// == MESSAGE FORM ==
-
-const messageInputName = document.getElementById("message-input-name");
-const messageInputPhone = document.getElementById("message-input-phone");
-const messageInputEmail = document.getElementById("message-input-email");
-const messageInputText = document.getElementById("message-input-text");
-
-// Clear error message on focus
-
-messageInputName.addEventListener("focus", function () {
-  clearError(messageInputName, language === "en" ? "Full Name" : "Puno Ime");
-});
-
-messageInputEmail.addEventListener("focus", function () {
-  clearError(
-    messageInputEmail,
-    language === "en" ? "Email Address" : "Email Adresa"
-  );
-});
-
-messageInputPhone.addEventListener("focus", function () {
-  clearError(
-    messageInputPhone,
-    language === "en" ? "Phone Number" : "Broj Telefona"
-  );
-});
-
-messageInputText.addEventListener("focus", function () {
-  clearError(
-    messageInputText,
-    language === "en" ? "Your Message" : "Vaša Poruka"
-  );
-});
-
-// Form Validation
-
-const validateMessageForm = function () {
-  if (
-    messageInputName.value &&
-    messageInputEmail.value &&
-    messageInputPhone.value &&
-    messageInputText.value
-  ) {
-    if (!messageInputEmail.value.includes("@")) {
-      clearValue(messageInputEmail);
-      errorMessage(
-        messageInputEmail,
-        language === "en" ? "Invalid Email Address" : "Nevažeća Email Adresa"
-      );
-    } else {
-      // store values in to an object
-      const message = {
-        fullName: messageInputName.value,
-        email: messageInputEmail.value,
-        phoneNumber: messageInputPhone.value,
-        text: messageInputText.value,
-      };
-
-      clearValue(messageInputName);
-      clearValue(messageInputEmail);
-      clearValue(messageInputPhone);
-      clearValue(messageInputText);
-
-      console.log(message);
-      alert(language === "en" ? "Message Sent!" : "Poruka Poslata!");
-    }
-  } else {
-    if (!messageInputName.value) {
-      errorMessage(
-        messageInputName,
-        language === "en" ? "Please Input Your Name" : "Molimo Unesite Vaše Ime"
-      );
-    }
-    if (!messageInputEmail.value) {
-      errorMessage(
-        messageInputEmail,
-        language === "en"
-          ? "Please Input Your Email"
-          : "Molimo Unesite Vaš Email"
-      );
-    }
-    if (!messageInputPhone.value) {
-      errorMessage(
-        messageInputPhone,
-        language === "en"
-          ? "Please Input Your Phone"
-          : "Molimo Unesite Vaš Broj Telefona"
-      );
-    }
-    if (!messageInputText.value) {
-      errorMessage(
-        messageInputText,
-        language === "en"
-          ? "Please Input Message Text"
-          : "Molimo Unesite Tekst Poruke"
-      );
-    }
-  }
-};
-
-// == SUBSCRIBE FORM ==
-
-const subscribeInputEmail = document.getElementById("subscribe-input-email");
-
-// Clear error message on focus
-
-subscribeInputEmail.addEventListener("focus", function () {
-  clearError(
-    subscribeInputEmail,
-    language === "en" ? "Your Email Address" : "Vaša Email Adresa"
-  );
-});
-
-// Form Validation
-
-const validateSubscribeForm = function () {
-  if (subscribeInputEmail) {
-    if (!subscribeInputEmail.value.includes("@")) {
-      clearValue(subscribeInputEmail);
-      errorMessage(
-        subscribeInputEmail,
-        language === "en" ? "Invalid Email Address" : "Nevažeća Email Adresa"
-      );
-    } else {
-      console.log(subscribeInputEmail.value);
-      alert(
-        language === "en" ? "Subscription Successful!" : "Pretplata Uspešna!"
-      );
-
-      clearValue(subscribeInputEmail);
-    }
-  } else {
-    if (!subscribeInputEmail.value) {
-      errorMessage(
-        subscribeInputEmail,
-        language === "en"
-          ? "Please Input Your Email"
-          : "Molimo Unesite Vašu Email Adresu"
       );
     }
   }

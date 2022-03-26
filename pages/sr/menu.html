@@ -34,7 +34,7 @@
         ><a href="#hero"><p class="active">Meni</p></a
         ><a href="../sr/about.html"><p>O nama</p></a
         ><a href="../sr/contact.html"><p>Kontakt</p></a>
-        <a style="font-size: 1.5rem;" href="../en-US/menu.html"><p>EN</p></a>
+        <a style="font-size: 1.5rem" href="../en-US/menu.html"><p>EN</p></a>
       </div>
       <div class="mobile-nav-background hidden flex-row">
         <div
@@ -157,8 +157,8 @@
               aria-label="Ovo dugme menja jezik na Engleski,"
               class="font-calluna-light color-white"
               href="../en-US/menu.html"
-              >EN</i
-            ></a>
+              >EN</a
+            >
           </li>
         </ul>
       </nav>
@@ -240,13 +240,13 @@
             Naš Meni
           </h1>
           <p class="body-text color-light-grey font-montserrat-light">
-            Ponosni smo na raznovrsnost i kvalitet hrane i pića koji nudimo.
-            Od zapadnjačke do japanske kuhinje, kod nas možete probati hranu
-            iz celog sveta, <span>sa najboljim kvalitetom.</span> 
+            Ponosni smo na raznovrsnost i kvalitet hrane i pića koji nudimo. Od
+            zapadnjačke do japanske kuhinje, kod nas možete probati hranu iz
+            celog sveta, <span>sa najboljim kvalitetom.</span>
           </p>
           <p class="body-text color-light-grey font-montserrat-light">
-            Naša hrana se pravi isključivo na mestu od najkvalitetnijih sastojaka
-            jer verujemo da naše mušterije zaslužuju najbolje;
+            Naša hrana se pravi isključivo na mestu od najkvalitetnijih
+            sastojaka jer verujemo da naše mušterije zaslužuju najbolje;
             <span>bez kompromisa.</span>
           </p>
           <div class="our-story-button flex">
@@ -1030,20 +1030,28 @@
             class="subscribe-image"
           />
           <div class="subscribe-text flex-column">
-            <h1 class="font-calluna-bold color-white">Pretplatite se na mailing listu</h1>
+            <h1 class="font-calluna-bold color-white">
+              Pretplatite se na mailing listu
+            </h1>
             <p class="font-montserrat-light color-white text-center">
-              Pretplatite se na naš newsletter i saznajte više o specijalnim događajima i
-              promicijama pre nego što ih objavimo bilo gde!
+              Pretplatite se na naš newsletter i saznajte više o specijalnim
+              događajima i promicijama pre nego što ih objavimo bilo gde!
             </p>
             <form action="">
               <input
+                id="subscribe-input-email"
                 autocomplete="off"
-                placeholder="Vaša email adresa"
+                placeholder="Vaša Email Adresa"
                 type="email"
               />
             </form>
-            <div class="subscribe-button flex">
-              <a class="font-montserrat-regular color-white flex" href="#"
+            <div
+              onclick="validateSubscribeForm()"
+              class="subscribe-button flex"
+            >
+              <a
+                href="javascript:void(0)"
+                class="font-montserrat-regular color-white flex"
                 ><h6>Pretplati se</h6>
                 <i class="fal fa-chevron-right arrow"></i>
               </a>
@@ -1090,7 +1098,13 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+      integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+      crossorigin="anonymous"
+    ></script>
     <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/subscribe-validation.js"></script>
     <script src="../../lib/aos.js"></script>
     <script>
       AOS.init({
