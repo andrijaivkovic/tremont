@@ -994,6 +994,7 @@ div[class*="menu-content"] {
 }
 
 .chef-image img {
+  background-color: var(--dark-grey-color);
   border: 1px solid var(--accent-color);
   transition: 0.3s ease-in-out;
 }
