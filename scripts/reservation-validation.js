@@ -48,31 +48,31 @@ const closeOverlay = function () {
   clearValue(resInputGuests);
 
   // cleat error messages
-  clearError(resInputName, language === "en" ? "Full Name" : "Puno Ime");
+  clearError(resInputName, language === "en" ? "Full Name" : "Ime i prezime");
 
   clearError(
     resInputEmail,
-    language === "en" ? "Email Address" : "Email Adresa"
+    language === "en" ? "Email Address" : "Email adresa"
   );
 
   clearError(
     resInputPhone,
-    language === "en" ? "Phone Number" : "Broj Telefona"
+    language === "en" ? "Phone Number" : "Broj telefona"
   );
 
   clearError(
     resInputDate,
-    language === "en" ? "Reservation Date" : "Datum Rezervacije"
+    language === "en" ? "Reservation Date" : "Datum rezervacije"
   );
 
   clearError(
     resInputTime,
-    language === "en" ? "Reservation Time" : "Vreme Rezervacije"
+    language === "en" ? "Reservation Time" : "Vreme rezervacije"
   );
 
   clearError(
     resInputGuests,
-    language === "en" ? "Number Of Guests" : "Broj Gostiju"
+    language === "en" ? "Number Of Guests" : "Broj gostiju"
   );
 
   resOverlay.style.display = "none";
@@ -84,41 +84,41 @@ const closeOverlay = function () {
 // Clear error message on focus
 
 resInputName.addEventListener("focus", function () {
-  clearError(resInputName, language === "en" ? "Full Name" : "Puno Ime");
+  clearError(resInputName, language === "en" ? "Full Name" : "Ime i prezime");
 });
 
 resInputEmail.addEventListener("focus", function () {
   clearError(
     resInputEmail,
-    language === "en" ? "Email Address" : "Email Adresa"
+    language === "en" ? "Email Address" : "Email adresa"
   );
 });
 
 resInputPhone.addEventListener("focus", function () {
   clearError(
     resInputPhone,
-    language === "en" ? "Phone Number" : "Broj Telefona"
+    language === "en" ? "Phone Number" : "Broj telefona"
   );
 });
 
 resInputDate.addEventListener("focus", function () {
   clearError(
     resInputDate,
-    language === "en" ? "Reservation Date" : "Datum Rezervacije"
+    language === "en" ? "Reservation Date" : "Datum rezervacije"
   );
 });
 
 resInputTime.addEventListener("focus", function () {
   clearError(
     resInputTime,
-    language === "en" ? "Reservation Time" : "Vreme Rezervacije"
+    language === "en" ? "Reservation Time" : "Vreme rezervacije"
   );
 });
 
 resInputGuests.addEventListener("focus", function () {
   clearError(
     resInputGuests,
-    language === "en" ? "Number Of Guests" : "Broj Gostiju"
+    language === "en" ? "Number Of Guests" : "Broj gostiju"
   );
 });
 
@@ -137,7 +137,7 @@ const validateReservationForm = function () {
       clearValue(resInputEmail);
       errorMessage(
         resInputEmail,
-        language === "en" ? "Invalid Email Address" : "Nevažeća Email Adresa"
+        language === "en" ? "Invalid Email Address" : "Nevažeća email adresa"
       );
     } else {
       // store values in to an object
@@ -161,14 +161,16 @@ const validateReservationForm = function () {
 
       console.log(reservation);
       alert(
-        language === "en" ? "Reservation Successful!" : "Uspešna Rezervacija!"
+        language === "en" ? "Reservation Successful!" : "Uspešna rezervacija!"
       );
     }
   } else {
     if (!resInputName.value) {
       errorMessage(
         resInputName,
-        language === "en" ? "Please Input Your Name" : "Molimo Unesite Vaše Ime"
+        language === "en"
+          ? "Please Input Your Name"
+          : "Molimo unesite Vaše ime i prezime"
       );
     }
     if (!resInputEmail.value) {
@@ -176,7 +178,7 @@ const validateReservationForm = function () {
         resInputEmail,
         language === "en"
           ? "Please Input Your Email"
-          : "Molimo Unesite Vašu Email Adresu"
+          : "Molimo unesite Vašu email adresu"
       );
     }
     if (!resInputPhone.value) {
@@ -184,19 +186,19 @@ const validateReservationForm = function () {
         resInputPhone,
         language === "en"
           ? "Please Input Your Phone"
-          : "Molimo Unesite Vaš Broj Telefona"
+          : "Molimo unesite Vaš broj telefona"
       );
     }
     if (!resInputDate.value) {
       errorMessage(
         resInputDate,
-        language === "en" ? "Please Input Date" : "Molimo Unesite Datum"
+        language === "en" ? "Please Input Date" : "Molimo unesite datum"
       );
     }
     if (!resInputTime.value) {
       errorMessage(
         resInputTime,
-        language === "en" ? "Please Input Time" : "Molimo Unesite Vreme"
+        language === "en" ? "Please Input Time" : "Molimo unesite vreme"
       );
     }
     if (!resInputGuests.value) {
@@ -204,7 +206,7 @@ const validateReservationForm = function () {
         resInputGuests,
         language === "en"
           ? "Please Input Number Of Guests"
-          : "Molimo Unesite Broj Gostiju"
+          : "Molimo unesite broj gostiju"
       );
     }
   }

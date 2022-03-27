@@ -10,27 +10,30 @@ const messageInputText = document.getElementById("message-input-text");
 // Clear error message on focus
 
 messageInputName.addEventListener("focus", function () {
-  clearError(messageInputName, language === "en" ? "Full Name" : "Puno Ime");
+  clearError(
+    messageInputName,
+    language === "en" ? "Full Name" : "Ime i prezime"
+  );
 });
 
 messageInputEmail.addEventListener("focus", function () {
   clearError(
     messageInputEmail,
-    language === "en" ? "Email Address" : "Email Adresa"
+    language === "en" ? "Email Address" : "Email adresa"
   );
 });
 
 messageInputPhone.addEventListener("focus", function () {
   clearError(
     messageInputPhone,
-    language === "en" ? "Phone Number" : "Broj Telefona"
+    language === "en" ? "Phone Number" : "Broj telefona"
   );
 });
 
 messageInputText.addEventListener("focus", function () {
   clearError(
     messageInputText,
-    language === "en" ? "Your Message" : "Vaša Poruka"
+    language === "en" ? "Your Message" : "Vaša poruka"
   );
 });
 
@@ -47,7 +50,7 @@ const validateMessageForm = function () {
       clearValue(messageInputEmail);
       errorMessage(
         messageInputEmail,
-        language === "en" ? "Invalid Email Address" : "Nevažeća Email Adresa"
+        language === "en" ? "Invalid Email Address" : "Nevažeća email adresa"
       );
     } else {
       // store values in to an object
@@ -64,13 +67,15 @@ const validateMessageForm = function () {
       clearValue(messageInputText);
 
       console.log(message);
-      alert(language === "en" ? "Message Sent!" : "Poruka Poslata!");
+      alert(language === "en" ? "Message Sent!" : "Poruka poslata!");
     }
   } else {
     if (!messageInputName.value) {
       errorMessage(
         messageInputName,
-        language === "en" ? "Please Input Your Name" : "Molimo Unesite Vaše Ime"
+        language === "en"
+          ? "Please Input Your Name"
+          : "Molimo unesite Vaše ime i prezime"
       );
     }
     if (!messageInputEmail.value) {
@@ -78,7 +83,7 @@ const validateMessageForm = function () {
         messageInputEmail,
         language === "en"
           ? "Please Input Your Email"
-          : "Molimo Unesite Vaš Email"
+          : "Molimo unesite Vašu email adresu"
       );
     }
     if (!messageInputPhone.value) {
@@ -86,7 +91,7 @@ const validateMessageForm = function () {
         messageInputPhone,
         language === "en"
           ? "Please Input Your Phone"
-          : "Molimo Unesite Vaš Broj Telefona"
+          : "Molimo unesite Vaš broj telefona"
       );
     }
     if (!messageInputText.value) {
@@ -94,7 +99,7 @@ const validateMessageForm = function () {
         messageInputText,
         language === "en"
           ? "Please Input Message Text"
-          : "Molimo Unesite Tekst Poruke"
+          : "Molimo unesite tekst poruke"
       );
     }
   }

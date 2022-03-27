@@ -184,7 +184,7 @@ svg {
 }
 
 .color-dark-grey {
-  color: var(--accent-color);
+  color: var(--dark-grey-color);
 }
 
 .color-light-grey {
@@ -197,49 +197,17 @@ a {
 
 a:hover {
   color: var(--accent-color) !important;
-  fill: var(--accent-color) !important;
 }
 
 button:hover {
   color: var(--accent-color) !important;
-  fill: var(--accent-color) !important;
 }
 
 span {
   color: var(--accent-color);
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-h4 {
-  margin: 0;
-  padding: 0;
-}
-
-h5 {
-  margin: 0;
-  padding: 0;
-}
-
-h6 {
+* {
   margin: 0;
   padding: 0;
 }
@@ -723,7 +691,7 @@ textarea {
   animation: fadeInUp 0.5s 0.4s ease-in-out forwards;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
+  margin-top: 3rem;
   font-size: clamp(2vmin, 2vmin + 5vw, 1.35vmax);
 }
 
@@ -1291,9 +1259,7 @@ footer {
 }
 
 .overlay-form-text p {
-  text-align: center;
   font-size: 1rem;
-  padding-inline: px;
   line-height: 1.5;
   letter-spacing: 0.75px;
 }

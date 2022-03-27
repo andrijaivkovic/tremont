@@ -27,7 +27,7 @@ const subscribeInputEmail = document.getElementById("subscribe-input-email");
 subscribeInputEmail.addEventListener("focus", function () {
   clearError(
     subscribeInputEmail,
-    language === "en" ? "Your Email Address" : "Vaša Email Adresa"
+    language === "en" ? "Your Email Address" : "Vaša email adresa"
   );
 });
 
@@ -39,12 +39,12 @@ const validateSubscribeForm = function () {
       clearValue(subscribeInputEmail);
       errorMessage(
         subscribeInputEmail,
-        language === "en" ? "Invalid Email Address" : "Nevažeća Email Adresa"
+        language === "en" ? "Invalid Email Address" : "Nevažeća email adresa"
       );
     } else {
       console.log(subscribeInputEmail.value);
       alert(
-        language === "en" ? "Subscription Successful!" : "Pretplata Uspešna!"
+        language === "en" ? "Subscription Successful!" : "Pretplata uspešna!"
       );
 
       clearValue(subscribeInputEmail);
@@ -55,7 +55,7 @@ const validateSubscribeForm = function () {
         subscribeInputEmail,
         language === "en"
           ? "Please Input Your Email"
-          : "Molimo Unesite Vašu Email Adresu"
+          : "Molimo unesite Vašu email adresu"
       );
     }
   }
