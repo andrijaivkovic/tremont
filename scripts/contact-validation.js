@@ -7,6 +7,8 @@ const messageInputPhone = document.getElementById("message-input-phone");
 const messageInputEmail = document.getElementById("message-input-email");
 const messageInputText = document.getElementById("message-input-text");
 
+const btnContact = document.querySelector(".contact-button");
+
 // Clear error message on focus
 
 messageInputName.addEventListener("focus", function () {
@@ -39,7 +41,8 @@ messageInputText.addEventListener("focus", function () {
 
 // Form Validation
 
-const validateMessageForm = function () {
+btnContact.addEventListener("click", function (e) {
+  e.preventDefault();
   if (
     messageInputName.value &&
     messageInputEmail.value &&
@@ -103,4 +106,4 @@ const validateMessageForm = function () {
       );
     }
   }
-};
+});

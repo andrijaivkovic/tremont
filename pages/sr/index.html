@@ -68,7 +68,6 @@
       <nav>
         <ul class="primary-navigation flex">
           <button
-            onclick="mobileNav()"
             id="mobile-nav-toggle"
             class="mobile-nav-toggle"
           >
@@ -179,9 +178,9 @@
           Najbolje mesto za jelo <br />
           u ovom delu grada
         </div>
-        <div onclick="openOverlay()" class="hero-button flex">
+        <div class="hero-button flex">
           <a
-            href="javascript:void(0)"
+            href="#"
             aria-label=", Reservation, this button opens the Resetvation form, "
             class="font-calluna-light color-white flex"
             href="#"
@@ -439,11 +438,10 @@
                   ></textarea>
                 </form>
                 <div
-                  onclick="validateMessageForm()"
                   class="contact-button flex"
                 >
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     aria-label=". Pošaljite poruku,"
                     class="font-montserrat-regular color-white flex"
                     href="#"
@@ -543,13 +541,11 @@
                   />
                 </form>
                 <div
-                  onclick="validateSubscribeForm()"
                   class="subscribe-button flex"
                 >
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     class="font-montserrat-regular color-white flex"
-                    href="javascript:void(0)"
                     ><h6>Pretplati se</h6>
                     <i class="fal fa-chevron-right arrow"></i>
                   </a>
@@ -590,8 +586,8 @@
           </div>
         </footer>
         <div id="reservation-overlay" class="overlay">
-          <div onclick="closeOverlay()" class="overlay-background"></div>
-          <div onclick="closeOverlay()" class="overlay-close">
+          <div class="overlay-background"></div>
+          <div class="overlay-close">
             <i class="fal fa-times"></i>
           </div>
           <div class="overlay-form-image flex-row">
@@ -647,11 +643,10 @@
                 />
               </form>
               <div
-                onclick="validateReservationForm()"
                 class="overlay-button flex"
               >
                 <a
-                  href="javascript:void(0)"
+                  href="#"
                   aria-label=", Potvrdite rezervaciju, "
                   class="font-calluna-light color-white flex"
                   ><h6>Reservacija</h6>

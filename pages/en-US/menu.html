@@ -60,11 +60,7 @@
       </div>
       <nav>
         <ul class="primary-navigation flex">
-          <button
-            onclick="mobileNav()"
-            id="mobile-nav-toggle"
-            class="mobile-nav-toggle"
-          >
+          <button id="mobile-nav-toggle" class="mobile-nav-toggle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -212,7 +208,7 @@
       </svg>
     </section>
     <div class="body-container flex-column">
-      <!-- == ZAMENITI RASPORED == -->
+      <!-- == CHANGE FLEX ORDER == -->
       <section
         aria-labelledby="our-menu-title"
         id="our-menu"
@@ -320,7 +316,6 @@
             <button
               title="Japanese Menu"
               aria-label="Japanese Menu"
-              onclick="japaneseMenu()"
               class="menu-select-item-japanese line font-calluna-light color-light-grey"
             >
               <span class="menu-select-text-japanese active">Japanese</span>
@@ -328,14 +323,12 @@
             <button
               title="Western Menu"
               aria-label="Western Menu"
-              onclick="westernMenu()"
               class="menu-select-item-western font-calluna-light color-light-grey"
             >
               <span class="menu-select-text-western">Western</span></button
             ><button
               title="Korean Menu"
               aria-label="Korean Menu"
-              onclick="koreanMenu()"
               class="menu-select-item-korean font-calluna-light color-light-grey"
             >
               <span class="menu-select-text-korean">Korean</span>
@@ -1050,13 +1043,8 @@
                 type="email"
               />
             </form>
-            <div
-              onclick="validateSubscribeForm()"
-              class="subscribe-button flex"
-            >
-              <a
-                href="javascript:void(0)"
-                class="font-montserrat-regular color-white flex"
+            <div class="subscribe-button flex">
+              <a href="#" class="font-montserrat-regular color-white flex"
                 ><h6>Subscribe</h6>
                 <i class="fal fa-chevron-right arrow"></i>
               </a>
@@ -1109,6 +1097,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts//menus.js"></script>
     <script src="../../scripts/subscribe-validation.js"></script>
     <script src="../../lib/aos.js"></script>
     <script>

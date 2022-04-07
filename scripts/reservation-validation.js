@@ -6,7 +6,6 @@ $("#reservation-input-date").datepicker({
 });
 
 // == Time Input ==
-
 $("#reservation-input-time").timepicker({
   timeFormat: "h:mm p",
   interval: 60,
@@ -19,13 +18,19 @@ $("#reservation-input-time").timepicker({
   scrollbar: false,
 });
 
-const resInputName = document.getElementById("reservation-input-name");
-const resInputEmail = document.getElementById("reservation-input-email");
-const resInputPhone = document.getElementById("reservation-input-phone");
-const resInputDate = document.getElementById("reservation-input-date");
-const resInputTime = document.getElementById("reservation-input-time");
-const resInputGuests = document.getElementById("reservation-input-guests");
-const resOverlay = document.getElementById("reservation-overlay");
+const resInputName = document.querySelector("#reservation-input-name");
+const resInputEmail = document.querySelector("#reservation-input-email");
+const resInputPhone = document.querySelector("#reservation-input-phone");
+const resInputDate = document.querySelector("#reservation-input-date");
+const resInputTime = document.querySelector("#reservation-input-time");
+const resInputGuests = document.querySelector("#reservation-input-guests");
+const resOverlay = document.querySelector("#reservation-overlay");
+
+const btnOverlay = document.querySelector(".hero-button");
+const btnReservation = document.querySelector(".overlay-button");
+
+const overlayBackground = document.querySelector(".overlay-background");
+const overlayClose = document.querySelector(".overlay-close");
 
 // == RESERVATION OVERLAY ==
 
@@ -33,8 +38,15 @@ const resOverlay = document.getElementById("reservation-overlay");
 
 const openOverlay = function () {
   resOverlay.style.display = "flex";
-  // stop from scrolling
+  // TODO stop from scrolling
 };
+
+btnOverlay.addEventListener("click", function (e) {
+  // Preventing the default behavior
+  e.preventDefault();
+  // Open the reservation overlay
+  openOverlay();
+});
 
 // Close overlay
 
@@ -76,8 +88,11 @@ const closeOverlay = function () {
   );
 
   resOverlay.style.display = "none";
-  // enable scrolling
+  // TODO enable scrolling
 };
+
+const closeOverlayArr = [overlayBackground, overlayClose];
+closeOverlayArr.forEach((el) => el.addEventListener("click", closeOverlay));
 
 // == Validate Reservation Form ==
 
@@ -124,7 +139,8 @@ resInputGuests.addEventListener("focus", function () {
 
 // Form Validation
 
-const validateReservationForm = function () {
+btnReservation.addEventListener("click", function (e) {
+  e.preventDefault();
   if (
     resInputName.value &&
     resInputEmail.value &&
@@ -210,4 +226,4 @@ const validateReservationForm = function () {
       );
     }
   }
-};
+});

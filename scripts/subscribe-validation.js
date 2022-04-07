@@ -1,26 +1,9 @@
 "use strict";
 
-// // Helper functions
-
-// let clearValue = function (element) {
-//   element.value = "";
-// };
-
-// let errorMessage = function (element, text) {
-//   element.placeholder = text;
-//   element.style.borderColor = "#ff6961";
-//   element.classList.add("red-placeholder");
-// };
-
-// let clearError = function (element, text) {
-//   element.placeholder = text;
-//   element.style.borderColor = "white";
-//   element.classList.remove("red-placeholder");
-// };
-
 // == SUBSCRIBE FORM ==
 
-const subscribeInputEmail = document.getElementById("subscribe-input-email");
+const subscribeInputEmail = document.querySelector("#subscribe-input-email");
+const btnSubscribe = document.querySelector(".subscribe-button");
 
 // Clear error message on focus
 
@@ -33,7 +16,8 @@ subscribeInputEmail.addEventListener("focus", function () {
 
 // Form Validation
 
-const validateSubscribeForm = function () {
+btnSubscribe.addEventListener("click", function (e) {
+  e.preventDefault();
   if (subscribeInputEmail) {
     if (!subscribeInputEmail.value.includes("@")) {
       clearValue(subscribeInputEmail);
@@ -59,4 +43,4 @@ const validateSubscribeForm = function () {
       );
     }
   }
-};
+});
