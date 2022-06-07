@@ -1,0 +1,25 @@
+{
+  "name": "tremont",
+  "version": "1.0.0",
+  "description": "This is the web page of the Parisian restaurant Tremont, designed and developed by me.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slamacus/tremont.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slamacus/tremont/issues"
+  },
+  "homepage": "https://github.com/Slamacus/tremont#readme",
+  "dependencies": {
+    "parcel": "^2.6.0"
+  }
+}
