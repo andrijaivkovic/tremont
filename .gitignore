@@ -1,4 +1,6 @@
 DESIGN
 node_modules
+.parcel-cache
 old
 old1
+dist
